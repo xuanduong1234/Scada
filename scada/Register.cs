@@ -41,13 +41,16 @@ namespace scada
                 strcheckLogin += "SELECT * FROM LoginTbl ";
                 strcheckLogin += "WHERE Username ='" + txtUserName.Text + "'";
                 strcheckLogin += "AND Password = '" + txtPassword.Text + "'";
+                
                 SqlCommand cmd = new SqlCommand(strcheckLogin, con);
                 SqlDataReader dta = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                
+
                 if (dta.Read() == true)
-                {                  
-                    SCADA f = new SCADA();
-                    this.Hide();
-                    f.ShowDialog();
+                {
+                    SCADA a = new SCADA();
+                    a.ShowDialog();
                     this.Show();
                 }
                 else
@@ -100,7 +103,21 @@ namespace scada
 
         private void btnDangNhap_KeyPress(object sender, KeyPressEventArgs e)
         {
+                    
+        }
 
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Chỉ nhập số
+        private void txtUserName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar)&& !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
+

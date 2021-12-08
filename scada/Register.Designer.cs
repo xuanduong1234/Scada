@@ -84,6 +84,8 @@ namespace scada
             this.txtUserName.Size = new System.Drawing.Size(167, 26);
             this.txtUserName.TabIndex = 1;
             this.txtUserName.Text = "Nhập ID Nhân Viên";
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
+            this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUserName_KeyPress);
             // 
             // txtPassword
             // 

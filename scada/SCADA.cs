@@ -8,15 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using S7.Net;
+using System.Data.SqlClient;
 
 namespace scada
 {
     public partial class SCADA : Form
-    {
-        public SCADA()
-        {
-            InitializeComponent();
-        }
+    {       
+      
+        string Username = "", Password = "", Quyen = "";
+        //Kết nối CSDL
+        SqlConnection conec = new SqlConnection(@"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True");    
+        string SQL;
+        SqlDataAdapter da;
+        DataTable dt;
+        SqlCommand cmd;
+
+      
         //Thời gian thực
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -33,10 +40,13 @@ namespace scada
                 lblCon.BackColor = Color.Green;
             }                
         }
-
+        //Phân quyền
         private void SCADA_Load(object sender, EventArgs e)
         {
-         
+            if (Quyen == "Admin")
+                lblQuyen.Text = "ADMIN";
+            else
+                lblQuyen.Text = "USER";
         }
         // Chỉ nhập số không nhập chữ
         private void txtAdressPLC_KeyPress(object sender, KeyPressEventArgs e)
@@ -46,7 +56,7 @@ namespace scada
                 e.Handled = true;
             }
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -58,6 +68,46 @@ namespace scada
         }
 
         private void standardControl8_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAuto_Click(object sender, EventArgs e)
+        {
+            FormAuto f = new FormAuto();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void lblCon_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+
+
+        private void btnManual_Click(object sender, EventArgs e)
+        {
+            if( Quyen == "Admin")
+            {
+                Manual f = new Manual();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập.");
+            }
+            
+        }
+        public SCADA(string Username, string Password, string Quyen)
+        {
+            InitializeComponent();
+            this.Username = Username;
+            this.Password = Password;
+            this.Quyen = Quyen;
+        }
+        public SCADA()
         {
 
         }

@@ -40,7 +40,6 @@ namespace scada
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.dropdownMenuBTD1 = new CustomControls.BTDControls.DropdownMenuBTD(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lblCon = new System.Windows.Forms.Label();
@@ -68,6 +67,8 @@ namespace scada
             this.standardControl2 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl1 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl5 = new SymbolFactoryDotNet.StandardControl();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblQuyen = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -84,6 +85,7 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -97,7 +99,7 @@ namespace scada
             this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblTime});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 580);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 614);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1159, 22);
             this.statusStrip1.TabIndex = 1;
@@ -173,15 +175,6 @@ namespace scada
             this.label6.Text = "HUST";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dropdownMenuBTD1
-            // 
-            this.dropdownMenuBTD1.IsMainMenu = false;
-            this.dropdownMenuBTD1.MenuItemHeight = 25;
-            this.dropdownMenuBTD1.MenuItemTextColor = System.Drawing.Color.Empty;
-            this.dropdownMenuBTD1.Name = "dropdownMenuBTD1";
-            this.dropdownMenuBTD1.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenuBTD1.Size = new System.Drawing.Size(61, 4);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label4);
@@ -215,6 +208,7 @@ namespace scada
             this.lblCon.Size = new System.Drawing.Size(14, 16);
             this.lblCon.TabIndex = 11;
             this.lblCon.Text = "  ";
+            this.lblCon.Click += new System.EventHandler(this.lblCon_Click);
             // 
             // txtAdressPLC
             // 
@@ -270,6 +264,7 @@ namespace scada
             this.btnAuto.TabStop = false;
             this.btnAuto.Text = "Auto";
             this.btnAuto.UseVisualStyleBackColor = true;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             // 
             // panel3
             // 
@@ -283,7 +278,7 @@ namespace scada
             this.panel3.Controls.Add(this.btnOffSet);
             this.panel3.Controls.Add(this.btnManual);
             this.panel3.Controls.Add(this.btnAuto);
-            this.panel3.Location = new System.Drawing.Point(0, 158);
+            this.panel3.Location = new System.Drawing.Point(3, 200);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(218, 411);
             this.panel3.TabIndex = 15;
@@ -391,6 +386,7 @@ namespace scada
             this.btnManual.TabStop = false;
             this.btnManual.Text = "Manual";
             this.btnManual.UseVisualStyleBackColor = true;
+            this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
             // 
             // panel2
             // 
@@ -398,7 +394,7 @@ namespace scada
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Location = new System.Drawing.Point(224, 59);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(935, 518);
+            this.panel2.Size = new System.Drawing.Size(935, 552);
             this.panel2.TabIndex = 17;
             // 
             // panel6
@@ -483,7 +479,7 @@ namespace scada
             this.standardControl4.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl4.DebugData"));
             this.standardControl4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.standardControl4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.standardControl4.Location = new System.Drawing.Point(134, 93);
+            this.standardControl4.Location = new System.Drawing.Point(132, 93);
             this.standardControl4.Name = "standardControl4";
             this.standardControl4.Size = new System.Drawing.Size(50, 21);
             this.standardControl4.SymbolHandle = ((long)(1946842866));
@@ -605,12 +601,32 @@ namespace scada
             this.standardControl5.SymbolHandle = ((long)(1161653739));
             this.standardControl5.TabIndex = 1;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.lblQuyen);
+            this.panel7.Location = new System.Drawing.Point(3, 158);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(218, 36);
+            this.panel7.TabIndex = 18;
+            // 
+            // lblQuyen
+            // 
+            this.lblQuyen.AutoSize = true;
+            this.lblQuyen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuyen.ForeColor = System.Drawing.Color.Lime;
+            this.lblQuyen.Location = new System.Drawing.Point(70, 9);
+            this.lblQuyen.Name = "lblQuyen";
+            this.lblQuyen.Size = new System.Drawing.Size(78, 19);
+            this.lblQuyen.TabIndex = 0;
+            this.lblQuyen.Text = "   QUYỀN";
+            // 
             // SCADA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(1159, 602);
+            this.ClientSize = new System.Drawing.Size(1159, 636);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -645,6 +661,8 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -659,7 +677,6 @@ namespace scada
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private CustomControls.BTDControls.DropdownMenuBTD dropdownMenuBTD1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblCon;
@@ -689,5 +706,7 @@ namespace scada
         private SymbolFactoryDotNet.StandardControl standardControl7;
         private SymbolFactoryDotNet.StandardControl standardControl6;
         private SymbolFactoryDotNet.StandardControl standardControl4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label lblQuyen;
     }
 }
