@@ -15,7 +15,7 @@ namespace scada
     public partial class SCADA : Form
     {       
       
-        string Username = "", Password = "", Quyen = "";
+        string Username = "", Password = "", Quyen = "Admin";
         //Kết nối CSDL
         SqlConnection conec = new SqlConnection(@"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True");    
         string SQL;
@@ -100,16 +100,10 @@ namespace scada
             }
             
         }
-        public SCADA(string Username, string Password, string Quyen)
-        {
-            InitializeComponent();
-            this.Username = Username;
-            this.Password = Password;
-            this.Quyen = Quyen;
-        }
         public SCADA()
         {
-
+            InitializeComponent();
         }
+
     }
 }
