@@ -29,25 +29,26 @@ namespace scada
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manual));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnVitximang = new System.Windows.Forms.Button();
-            this.btnVitCat = new System.Windows.Forms.Button();
-            this.btnMaytron = new System.Windows.Forms.Button();
-            this.btnVitTroBay = new System.Windows.Forms.Button();
-            this.btnVitKhoang = new System.Windows.Forms.Button();
             this.btnMangTai = new System.Windows.Forms.Button();
+            this.btnVitKhoang = new System.Windows.Forms.Button();
+            this.btnVitTroBay = new System.Windows.Forms.Button();
+            this.btnMaytron = new System.Windows.Forms.Button();
+            this.btnVitCat = new System.Windows.Forms.Button();
+            this.btnVitximang = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.brnVanPheuPG1 = new System.Windows.Forms.Button();
-            this.btnVanCanPG = new System.Windows.Forms.Button();
-            this.btnVanMayTronMo = new System.Windows.Forms.Button();
-            this.btnVanPheuPG2 = new System.Windows.Forms.Button();
-            this.btnVanCanXiCat = new System.Windows.Forms.Button();
-            this.btnVanMayTronDong = new System.Windows.Forms.Button();
-            this.btnVanPheuPG3 = new System.Windows.Forms.Button();
             this.btnVanTroKhoang = new System.Windows.Forms.Button();
+            this.btnVanPheuPG3 = new System.Windows.Forms.Button();
+            this.btnVanMayTronDong = new System.Windows.Forms.Button();
+            this.btnVanCanXiCat = new System.Windows.Forms.Button();
+            this.btnVanPheuPG2 = new System.Windows.Forms.Button();
+            this.btnVanMayTronMo = new System.Windows.Forms.Button();
+            this.btnVanCanPG = new System.Windows.Forms.Button();
+            this.brnVanPheuPG1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -109,53 +110,17 @@ namespace scada
             this.tableLayoutPanel2.Size = new System.Drawing.Size(509, 117);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // btnVitximang
+            // btnMangTai
             // 
-            this.btnVitximang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVitximang.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVitximang.Location = new System.Drawing.Point(3, 3);
-            this.btnVitximang.Name = "btnVitximang";
-            this.btnVitximang.Size = new System.Drawing.Size(163, 52);
-            this.btnVitximang.TabIndex = 0;
-            this.btnVitximang.Text = "Vít xi măng";
-            this.btnVitximang.UseVisualStyleBackColor = true;
-            this.btnVitximang.Click += new System.EventHandler(this.btnVitximang_Click);
-            // 
-            // btnVitCat
-            // 
-            this.btnVitCat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVitCat.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVitCat.Location = new System.Drawing.Point(172, 3);
-            this.btnVitCat.Name = "btnVitCat";
-            this.btnVitCat.Size = new System.Drawing.Size(163, 52);
-            this.btnVitCat.TabIndex = 1;
-            this.btnVitCat.Text = "Vít cát";
-            this.btnVitCat.UseVisualStyleBackColor = true;
-            this.btnVitCat.Click += new System.EventHandler(this.btnVitCat_Click);
-            // 
-            // btnMaytron
-            // 
-            this.btnMaytron.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaytron.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnMaytron.Location = new System.Drawing.Point(341, 3);
-            this.btnMaytron.Name = "btnMaytron";
-            this.btnMaytron.Size = new System.Drawing.Size(163, 52);
-            this.btnMaytron.TabIndex = 2;
-            this.btnMaytron.Text = "Máy trộn";
-            this.btnMaytron.UseVisualStyleBackColor = true;
-            this.btnMaytron.Click += new System.EventHandler(this.btnMaytron_Click);
-            // 
-            // btnVitTroBay
-            // 
-            this.btnVitTroBay.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVitTroBay.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVitTroBay.Location = new System.Drawing.Point(3, 61);
-            this.btnVitTroBay.Name = "btnVitTroBay";
-            this.btnVitTroBay.Size = new System.Drawing.Size(163, 52);
-            this.btnVitTroBay.TabIndex = 3;
-            this.btnVitTroBay.Text = "Vít tro bay";
-            this.btnVitTroBay.UseVisualStyleBackColor = true;
-            this.btnVitTroBay.Click += new System.EventHandler(this.btnVitTroBay_Click);
+            this.btnMangTai.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMangTai.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnMangTai.Location = new System.Drawing.Point(341, 61);
+            this.btnMangTai.Name = "btnMangTai";
+            this.btnMangTai.Size = new System.Drawing.Size(163, 52);
+            this.btnMangTai.TabIndex = 5;
+            this.btnMangTai.Text = "Máng tải";
+            this.btnMangTai.UseVisualStyleBackColor = true;
+            this.btnMangTai.Click += new System.EventHandler(this.btnMangTai_Click);
             // 
             // btnVitKhoang
             // 
@@ -169,17 +134,53 @@ namespace scada
             this.btnVitKhoang.UseVisualStyleBackColor = true;
             this.btnVitKhoang.Click += new System.EventHandler(this.btnVitKhoang_Click);
             // 
-            // btnMangTai
+            // btnVitTroBay
             // 
-            this.btnMangTai.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMangTai.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnMangTai.Location = new System.Drawing.Point(341, 61);
-            this.btnMangTai.Name = "btnMangTai";
-            this.btnMangTai.Size = new System.Drawing.Size(163, 52);
-            this.btnMangTai.TabIndex = 5;
-            this.btnMangTai.Text = "Máng tải";
-            this.btnMangTai.UseVisualStyleBackColor = true;
-            this.btnMangTai.Click += new System.EventHandler(this.btnMangTai_Click);
+            this.btnVitTroBay.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVitTroBay.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVitTroBay.Location = new System.Drawing.Point(3, 61);
+            this.btnVitTroBay.Name = "btnVitTroBay";
+            this.btnVitTroBay.Size = new System.Drawing.Size(163, 52);
+            this.btnVitTroBay.TabIndex = 3;
+            this.btnVitTroBay.Text = "Vít tro bay";
+            this.btnVitTroBay.UseVisualStyleBackColor = true;
+            this.btnVitTroBay.Click += new System.EventHandler(this.btnVitTroBay_Click);
+            // 
+            // btnMaytron
+            // 
+            this.btnMaytron.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaytron.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnMaytron.Location = new System.Drawing.Point(341, 3);
+            this.btnMaytron.Name = "btnMaytron";
+            this.btnMaytron.Size = new System.Drawing.Size(163, 52);
+            this.btnMaytron.TabIndex = 2;
+            this.btnMaytron.Text = "Máy trộn";
+            this.btnMaytron.UseVisualStyleBackColor = true;
+            this.btnMaytron.Click += new System.EventHandler(this.btnMaytron_Click);
+            // 
+            // btnVitCat
+            // 
+            this.btnVitCat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVitCat.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVitCat.Location = new System.Drawing.Point(172, 3);
+            this.btnVitCat.Name = "btnVitCat";
+            this.btnVitCat.Size = new System.Drawing.Size(163, 52);
+            this.btnVitCat.TabIndex = 1;
+            this.btnVitCat.Text = "Vít cát";
+            this.btnVitCat.UseVisualStyleBackColor = true;
+            this.btnVitCat.Click += new System.EventHandler(this.btnVitCat_Click);
+            // 
+            // btnVitximang
+            // 
+            this.btnVitximang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVitximang.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVitximang.Location = new System.Drawing.Point(3, 3);
+            this.btnVitximang.Name = "btnVitximang";
+            this.btnVitximang.Size = new System.Drawing.Size(163, 52);
+            this.btnVitximang.TabIndex = 0;
+            this.btnVitximang.Text = "Vít xi măng";
+            this.btnVitximang.UseVisualStyleBackColor = true;
+            this.btnVitximang.Click += new System.EventHandler(this.btnVitximang_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -204,25 +205,55 @@ namespace scada
             this.tableLayoutPanel3.Size = new System.Drawing.Size(509, 111);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // brnVanPheuPG1
+            // btnVanTroKhoang
             // 
-            this.brnVanPheuPG1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.brnVanPheuPG1.Location = new System.Drawing.Point(3, 3);
-            this.brnVanPheuPG1.Name = "brnVanPheuPG1";
-            this.brnVanPheuPG1.Size = new System.Drawing.Size(163, 30);
-            this.brnVanPheuPG1.TabIndex = 0;
-            this.brnVanPheuPG1.Text = "Van phễu PG1";
-            this.brnVanPheuPG1.UseVisualStyleBackColor = true;
+            this.btnVanTroKhoang.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanTroKhoang.Location = new System.Drawing.Point(172, 77);
+            this.btnVanTroKhoang.Name = "btnVanTroKhoang";
+            this.btnVanTroKhoang.Size = new System.Drawing.Size(163, 30);
+            this.btnVanTroKhoang.TabIndex = 7;
+            this.btnVanTroKhoang.Text = " Van tro khoáng";
+            this.btnVanTroKhoang.UseVisualStyleBackColor = true;
             // 
-            // btnVanCanPG
+            // btnVanPheuPG3
             // 
-            this.btnVanCanPG.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVanCanPG.Location = new System.Drawing.Point(172, 3);
-            this.btnVanCanPG.Name = "btnVanCanPG";
-            this.btnVanCanPG.Size = new System.Drawing.Size(163, 30);
-            this.btnVanCanPG.TabIndex = 1;
-            this.btnVanCanPG.Text = "Van cân PG";
-            this.btnVanCanPG.UseVisualStyleBackColor = true;
+            this.btnVanPheuPG3.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanPheuPG3.Location = new System.Drawing.Point(3, 77);
+            this.btnVanPheuPG3.Name = "btnVanPheuPG3";
+            this.btnVanPheuPG3.Size = new System.Drawing.Size(163, 30);
+            this.btnVanPheuPG3.TabIndex = 6;
+            this.btnVanPheuPG3.Text = "Van phễu PG3";
+            this.btnVanPheuPG3.UseVisualStyleBackColor = true;
+            // 
+            // btnVanMayTronDong
+            // 
+            this.btnVanMayTronDong.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanMayTronDong.Location = new System.Drawing.Point(341, 40);
+            this.btnVanMayTronDong.Name = "btnVanMayTronDong";
+            this.btnVanMayTronDong.Size = new System.Drawing.Size(163, 30);
+            this.btnVanMayTronDong.TabIndex = 5;
+            this.btnVanMayTronDong.Text = "Van máy trộn đóng";
+            this.btnVanMayTronDong.UseVisualStyleBackColor = true;
+            // 
+            // btnVanCanXiCat
+            // 
+            this.btnVanCanXiCat.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanCanXiCat.Location = new System.Drawing.Point(172, 40);
+            this.btnVanCanXiCat.Name = "btnVanCanXiCat";
+            this.btnVanCanXiCat.Size = new System.Drawing.Size(163, 30);
+            this.btnVanCanXiCat.TabIndex = 4;
+            this.btnVanCanXiCat.Text = "Van cân xi cát";
+            this.btnVanCanXiCat.UseVisualStyleBackColor = true;
+            // 
+            // btnVanPheuPG2
+            // 
+            this.btnVanPheuPG2.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanPheuPG2.Location = new System.Drawing.Point(3, 40);
+            this.btnVanPheuPG2.Name = "btnVanPheuPG2";
+            this.btnVanPheuPG2.Size = new System.Drawing.Size(163, 30);
+            this.btnVanPheuPG2.TabIndex = 3;
+            this.btnVanPheuPG2.Text = "Van phễu PG2";
+            this.btnVanPheuPG2.UseVisualStyleBackColor = true;
             // 
             // btnVanMayTronMo
             // 
@@ -234,55 +265,25 @@ namespace scada
             this.btnVanMayTronMo.Text = "Van máy trộn mở";
             this.btnVanMayTronMo.UseVisualStyleBackColor = true;
             // 
-            // btnVanPheuPG2
+            // btnVanCanPG
             // 
-            this.btnVanPheuPG2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVanPheuPG2.Location = new System.Drawing.Point(3, 39);
-            this.btnVanPheuPG2.Name = "btnVanPheuPG2";
-            this.btnVanPheuPG2.Size = new System.Drawing.Size(163, 30);
-            this.btnVanPheuPG2.TabIndex = 3;
-            this.btnVanPheuPG2.Text = "Van phễu PG2";
-            this.btnVanPheuPG2.UseVisualStyleBackColor = true;
+            this.btnVanCanPG.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanCanPG.Location = new System.Drawing.Point(172, 3);
+            this.btnVanCanPG.Name = "btnVanCanPG";
+            this.btnVanCanPG.Size = new System.Drawing.Size(163, 30);
+            this.btnVanCanPG.TabIndex = 1;
+            this.btnVanCanPG.Text = "Van cân PG";
+            this.btnVanCanPG.UseVisualStyleBackColor = true;
             // 
-            // btnVanCanXiCat
+            // brnVanPheuPG1
             // 
-            this.btnVanCanXiCat.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVanCanXiCat.Location = new System.Drawing.Point(172, 39);
-            this.btnVanCanXiCat.Name = "btnVanCanXiCat";
-            this.btnVanCanXiCat.Size = new System.Drawing.Size(163, 30);
-            this.btnVanCanXiCat.TabIndex = 4;
-            this.btnVanCanXiCat.Text = "Van cân xi cát";
-            this.btnVanCanXiCat.UseVisualStyleBackColor = true;
-            // 
-            // btnVanMayTronDong
-            // 
-            this.btnVanMayTronDong.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVanMayTronDong.Location = new System.Drawing.Point(341, 39);
-            this.btnVanMayTronDong.Name = "btnVanMayTronDong";
-            this.btnVanMayTronDong.Size = new System.Drawing.Size(163, 30);
-            this.btnVanMayTronDong.TabIndex = 5;
-            this.btnVanMayTronDong.Text = "Van máy trộn đóng";
-            this.btnVanMayTronDong.UseVisualStyleBackColor = true;
-            // 
-            // btnVanPheuPG3
-            // 
-            this.btnVanPheuPG3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVanPheuPG3.Location = new System.Drawing.Point(3, 75);
-            this.btnVanPheuPG3.Name = "btnVanPheuPG3";
-            this.btnVanPheuPG3.Size = new System.Drawing.Size(163, 30);
-            this.btnVanPheuPG3.TabIndex = 6;
-            this.btnVanPheuPG3.Text = "Van phễu PG3";
-            this.btnVanPheuPG3.UseVisualStyleBackColor = true;
-            // 
-            // btnVanTroKhoang
-            // 
-            this.btnVanTroKhoang.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnVanTroKhoang.Location = new System.Drawing.Point(172, 75);
-            this.btnVanTroKhoang.Name = "btnVanTroKhoang";
-            this.btnVanTroKhoang.Size = new System.Drawing.Size(163, 30);
-            this.btnVanTroKhoang.TabIndex = 7;
-            this.btnVanTroKhoang.Text = " Van tro khoáng";
-            this.btnVanTroKhoang.UseVisualStyleBackColor = true;
+            this.brnVanPheuPG1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.brnVanPheuPG1.Location = new System.Drawing.Point(3, 3);
+            this.brnVanPheuPG1.Name = "brnVanPheuPG1";
+            this.brnVanPheuPG1.Size = new System.Drawing.Size(163, 30);
+            this.brnVanPheuPG1.TabIndex = 0;
+            this.brnVanPheuPG1.Text = "Van phễu PG1";
+            this.brnVanPheuPG1.UseVisualStyleBackColor = true;
             // 
             // Manual
             // 
@@ -294,11 +295,12 @@ namespace scada
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Manual";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Manual";
             this.TransparencyKey = System.Drawing.Color.Black;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

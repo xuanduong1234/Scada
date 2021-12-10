@@ -244,11 +244,11 @@ namespace scada
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Orange;
-            this.label5.Location = new System.Drawing.Point(12, 14);
+            this.label5.Location = new System.Drawing.Point(6, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 16);
+            this.label5.Size = new System.Drawing.Size(207, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Bảng điều khiển và khảo sát";
             // 
@@ -334,6 +334,7 @@ namespace scada
             this.btnRecipe.TabStop = false;
             this.btnRecipe.Text = "Recipe";
             this.btnRecipe.UseVisualStyleBackColor = true;
+            this.btnRecipe.Click += new System.EventHandler(this.btnRecipe_Click);
             // 
             // btnTrend
             // 
@@ -371,8 +372,9 @@ namespace scada
             this.btnOffSet.Size = new System.Drawing.Size(218, 45);
             this.btnOffSet.TabIndex = 2;
             this.btnOffSet.TabStop = false;
-            this.btnOffSet.Text = "Set Offset";
+            this.btnOffSet.Text = "Technical Error";
             this.btnOffSet.UseVisualStyleBackColor = true;
+            this.btnOffSet.Click += new System.EventHandler(this.btnOffSet_Click);
             // 
             // btnManual
             // 
@@ -603,6 +605,7 @@ namespace scada
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panel7.Controls.Add(this.lblQuyen);
             this.panel7.Location = new System.Drawing.Point(3, 158);
             this.panel7.Name = "panel7";
@@ -624,6 +627,7 @@ namespace scada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(1159, 636);
             this.Controls.Add(this.panel7);
@@ -635,6 +639,7 @@ namespace scada
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.statusStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SCADA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm sản xuất vữa khô";

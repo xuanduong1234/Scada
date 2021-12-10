@@ -48,10 +48,11 @@ namespace scada
                 
 
                 if (dta.Read() == true)
-                {
+                {                   
                     SCADA a = new SCADA();
                     a.ShowDialog();
                     this.Show();
+
                 }
                 else
                 {

@@ -13,7 +13,8 @@ using System.Data.SqlClient;
 namespace scada
 {
     public partial class SCADA : Form
-    {       
+    {
+        private int boderSize = 2;
       
         string Username = "", Password = "", Quyen = "Admin";
         //Kết nối CSDL
@@ -23,7 +24,15 @@ namespace scada
         DataTable dt;
         SqlCommand cmd;
 
-      
+        public SCADA()
+        {
+            InitializeComponent();
+            this.Text = string.Empty;
+            this.Padding = new Padding(boderSize);//boder size           
+            //this.ControlBox = false;
+            //this.DoubleBuffered = true;
+            //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
         //Thời gian thực
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -74,7 +83,19 @@ namespace scada
 
         private void btnAuto_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnRecipe_Click(object sender, EventArgs e)
+        {
             FormAuto f = new FormAuto();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnOffSet_Click(object sender, EventArgs e)
+        {
+            Error f = new Error();
             f.ShowDialog();
             this.Show();
         }
@@ -99,11 +120,6 @@ namespace scada
                 MessageBox.Show("Bạn không có quyền truy cập.");
             }
             
-        }
-        public SCADA()
-        {
-            InitializeComponent();
-        }
-
+        }       
     }
 }
