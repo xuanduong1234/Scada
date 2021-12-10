@@ -48,7 +48,7 @@ namespace scada
             this.btnVanPheuPG2 = new System.Windows.Forms.Button();
             this.btnVanMayTronMo = new System.Windows.Forms.Button();
             this.btnVanCanPG = new System.Windows.Forms.Button();
-            this.brnVanPheuPG1 = new System.Windows.Forms.Button();
+            this.btnVanPheuPG1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -160,6 +160,7 @@ namespace scada
             // 
             // btnVitCat
             // 
+            this.btnVitCat.BackColor = System.Drawing.Color.Silver;
             this.btnVitCat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVitCat.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnVitCat.Location = new System.Drawing.Point(172, 3);
@@ -167,11 +168,12 @@ namespace scada
             this.btnVitCat.Size = new System.Drawing.Size(163, 52);
             this.btnVitCat.TabIndex = 1;
             this.btnVitCat.Text = "Vít cát";
-            this.btnVitCat.UseVisualStyleBackColor = true;
+            this.btnVitCat.UseVisualStyleBackColor = false;
             this.btnVitCat.Click += new System.EventHandler(this.btnVitCat_Click);
             // 
             // btnVitximang
             // 
+            this.btnVitximang.BackColor = System.Drawing.Color.Silver;
             this.btnVitximang.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVitximang.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnVitximang.Location = new System.Drawing.Point(3, 3);
@@ -179,7 +181,7 @@ namespace scada
             this.btnVitximang.Size = new System.Drawing.Size(163, 52);
             this.btnVitximang.TabIndex = 0;
             this.btnVitximang.Text = "Vít xi măng";
-            this.btnVitximang.UseVisualStyleBackColor = true;
+            this.btnVitximang.UseVisualStyleBackColor = false;
             this.btnVitximang.Click += new System.EventHandler(this.btnVitximang_Click);
             // 
             // tableLayoutPanel3
@@ -195,7 +197,7 @@ namespace scada
             this.tableLayoutPanel3.Controls.Add(this.btnVanPheuPG2, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.btnVanMayTronMo, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnVanCanPG, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.brnVanPheuPG1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnVanPheuPG1, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 132);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
@@ -214,6 +216,7 @@ namespace scada
             this.btnVanTroKhoang.TabIndex = 7;
             this.btnVanTroKhoang.Text = " Van tro khoáng";
             this.btnVanTroKhoang.UseVisualStyleBackColor = true;
+            this.btnVanTroKhoang.Click += new System.EventHandler(this.btnVanTroKhoang_Click);
             // 
             // btnVanPheuPG3
             // 
@@ -224,6 +227,7 @@ namespace scada
             this.btnVanPheuPG3.TabIndex = 6;
             this.btnVanPheuPG3.Text = "Van phễu PG3";
             this.btnVanPheuPG3.UseVisualStyleBackColor = true;
+            this.btnVanPheuPG3.Click += new System.EventHandler(this.btnVanPheuPG3_Click);
             // 
             // btnVanMayTronDong
             // 
@@ -234,6 +238,7 @@ namespace scada
             this.btnVanMayTronDong.TabIndex = 5;
             this.btnVanMayTronDong.Text = "Van máy trộn đóng";
             this.btnVanMayTronDong.UseVisualStyleBackColor = true;
+            this.btnVanMayTronDong.Click += new System.EventHandler(this.btnVanMayTronDong_Click);
             // 
             // btnVanCanXiCat
             // 
@@ -244,6 +249,7 @@ namespace scada
             this.btnVanCanXiCat.TabIndex = 4;
             this.btnVanCanXiCat.Text = "Van cân xi cát";
             this.btnVanCanXiCat.UseVisualStyleBackColor = true;
+            this.btnVanCanXiCat.Click += new System.EventHandler(this.btnVanCanXiCat_Click);
             // 
             // btnVanPheuPG2
             // 
@@ -254,6 +260,7 @@ namespace scada
             this.btnVanPheuPG2.TabIndex = 3;
             this.btnVanPheuPG2.Text = "Van phễu PG2";
             this.btnVanPheuPG2.UseVisualStyleBackColor = true;
+            this.btnVanPheuPG2.Click += new System.EventHandler(this.btnVanPheuPG2_Click);
             // 
             // btnVanMayTronMo
             // 
@@ -264,6 +271,7 @@ namespace scada
             this.btnVanMayTronMo.TabIndex = 2;
             this.btnVanMayTronMo.Text = "Van máy trộn mở";
             this.btnVanMayTronMo.UseVisualStyleBackColor = true;
+            this.btnVanMayTronMo.Click += new System.EventHandler(this.btnVanMayTronMo_Click);
             // 
             // btnVanCanPG
             // 
@@ -274,16 +282,18 @@ namespace scada
             this.btnVanCanPG.TabIndex = 1;
             this.btnVanCanPG.Text = "Van cân PG";
             this.btnVanCanPG.UseVisualStyleBackColor = true;
+            this.btnVanCanPG.Click += new System.EventHandler(this.btnVanCanPG_Click);
             // 
-            // brnVanPheuPG1
+            // btnVanPheuPG1
             // 
-            this.brnVanPheuPG1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.brnVanPheuPG1.Location = new System.Drawing.Point(3, 3);
-            this.brnVanPheuPG1.Name = "brnVanPheuPG1";
-            this.brnVanPheuPG1.Size = new System.Drawing.Size(163, 30);
-            this.brnVanPheuPG1.TabIndex = 0;
-            this.brnVanPheuPG1.Text = "Van phễu PG1";
-            this.brnVanPheuPG1.UseVisualStyleBackColor = true;
+            this.btnVanPheuPG1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btnVanPheuPG1.Location = new System.Drawing.Point(3, 3);
+            this.btnVanPheuPG1.Name = "btnVanPheuPG1";
+            this.btnVanPheuPG1.Size = new System.Drawing.Size(163, 30);
+            this.btnVanPheuPG1.TabIndex = 0;
+            this.btnVanPheuPG1.Text = "Van phễu PG1";
+            this.btnVanPheuPG1.UseVisualStyleBackColor = true;
+            this.btnVanPheuPG1.Click += new System.EventHandler(this.btnVanPheuPG1_Click_1);
             // 
             // Manual
             // 
@@ -331,6 +341,6 @@ namespace scada
         private System.Windows.Forms.Button btnVanPheuPG2;
         private System.Windows.Forms.Button btnVanMayTronMo;
         private System.Windows.Forms.Button btnVanCanPG;
-        private System.Windows.Forms.Button brnVanPheuPG1;
+        private System.Windows.Forms.Button btnVanPheuPG1;
     }
 }

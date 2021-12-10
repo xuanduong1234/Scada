@@ -34,7 +34,7 @@ namespace scada
             SqlDataReader raeder = command.ExecuteReader();
             while (raeder.Read())
             {
-                string line = raeder.GetInt32(0) + "-" + raeder.GetString(1);
+                string line = raeder.GetInt32(0) +"-"+ raeder.GetString(1);
                 listBoxDanhMucLoi.Items.Add(line);
             }
             raeder.Close();                                     
@@ -44,7 +44,7 @@ namespace scada
         {
             if (listBoxDanhMucLoi.SelectedIndex == -1)
                 return;
-            string line = listBoxDanhMucLoi.SelectedIndex.ToString();
+            string line = listBoxDanhMucLoi.SelectedItem.ToString();
             string[] arr = line.Split('-');
             int madm = int.Parse(arr[0]);
 

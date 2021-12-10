@@ -77,7 +77,7 @@ namespace scada
             listViewItem1});
             this.lvTenLoi.Location = new System.Drawing.Point(215, 42);
             this.lvTenLoi.Name = "lvTenLoi";
-            this.lvTenLoi.Size = new System.Drawing.Size(629, 292);
+            this.lvTenLoi.Size = new System.Drawing.Size(562, 292);
             this.lvTenLoi.TabIndex = 2;
             this.lvTenLoi.UseCompatibleStateImageBehavior = false;
             this.lvTenLoi.View = System.Windows.Forms.View.Details;
@@ -101,21 +101,19 @@ namespace scada
             // columnHeader2
             // 
             this.columnHeader2.Text = "Date";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader2.Width = 200;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Tên lỗi";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 400;
+            this.columnHeader3.Width = 350;
             // 
             // Error
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.ClientSize = new System.Drawing.Size(856, 380);
+            this.ClientSize = new System.Drawing.Size(790, 364);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lvTenLoi);
             this.Controls.Add(this.label1);
