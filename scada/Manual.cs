@@ -30,7 +30,7 @@ namespace scada
         private bool check11 = true;
         private bool check12 = true;
         private bool check13 = true;
-        private bool check14 = true;
+        
 
         private void btnVitximang_Click(object sender, EventArgs e)
         {

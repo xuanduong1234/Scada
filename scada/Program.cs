@@ -16,11 +16,12 @@ namespace scada
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Register());
+            //Application.Run(new Register());
             //Application.Run(new SCADA());
             //Application.Run(new FormAuto());
             //Application.Run(new Error());
             //Application.Run(new Manual());
+            Application.Run(new Chart());
         }
     }
 }

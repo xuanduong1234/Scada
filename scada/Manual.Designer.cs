@@ -49,6 +49,7 @@ namespace scada
             this.btnVanMayTronMo = new System.Windows.Forms.Button();
             this.btnVanCanPG = new System.Windows.Forms.Button();
             this.btnVanPheuPG1 = new System.Windows.Forms.Button();
+            this.btnRun = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -61,7 +62,7 @@ namespace scada
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(515, 38);
+            this.panel1.Size = new System.Drawing.Size(514, 38);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -87,6 +88,7 @@ namespace scada
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(515, 259);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -295,12 +297,25 @@ namespace scada
             this.btnVanPheuPG1.UseVisualStyleBackColor = true;
             this.btnVanPheuPG1.Click += new System.EventHandler(this.btnVanPheuPG1_Click_1);
             // 
+            // btnRun
+            // 
+            this.btnRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.btnRun.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRun.ForeColor = System.Drawing.Color.Lime;
+            this.btnRun.Location = new System.Drawing.Point(380, 309);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(127, 32);
+            this.btnRun.TabIndex = 3;
+            this.btnRun.Text = "RUN";
+            this.btnRun.UseVisualStyleBackColor = false;
+            // 
             // Manual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(515, 306);
+            this.ClientSize = new System.Drawing.Size(514, 345);
+            this.Controls.Add(this.btnRun);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -342,5 +357,6 @@ namespace scada
         private System.Windows.Forms.Button btnVanMayTronMo;
         private System.Windows.Forms.Button btnVanCanPG;
         private System.Windows.Forms.Button btnVanPheuPG1;
+        private System.Windows.Forms.Button btnRun;
     }
 }
