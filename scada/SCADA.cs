@@ -15,7 +15,9 @@ namespace scada
     public partial class SCADA : Form
     {
         private int boderSize = 2;
-      
+        private About about;
+        private Form activeForm = null;
+
         string Username = "", Password = "", Quyen = "Admin";
         //Kết nối CSDL
         SqlConnection conec = new SqlConnection(@"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True");    
@@ -26,12 +28,27 @@ namespace scada
 
         public SCADA()
         {
+            this.about = new About();
             InitializeComponent();
             this.Text = string.Empty;
             this.Padding = new Padding(boderSize);//boder size           
             //this.ControlBox = false;
             //this.DoubleBuffered = true;
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+        //Mơ childform
+        private void openChildForm(Form childForm)
+        {
+            //if (activeForm != null) activeForm.Close();            
+            if (activeForm != null) activeForm.Hide();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel2.Controls.Add(childForm);
+            panel2.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
         //Thời gian thực
         private void timer1_Tick(object sender, EventArgs e)
@@ -55,7 +72,7 @@ namespace scada
             if (Quyen == "Admin")
                 lblQuyen.Text = "ADMIN";
             else
-                lblQuyen.Text = "USER";
+                lblQuyen.Text = "USER";           
         }
         // Chỉ nhập số không nhập chữ
         private void txtAdressPLC_KeyPress(object sender, KeyPressEventArgs e)
@@ -125,6 +142,11 @@ namespace scada
         private void standardControl40_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnWeigh_Click(object sender, EventArgs e)
+        {
+            this.openChildForm(about);
         }
 
         private void lblCon_Click(object sender, EventArgs e)

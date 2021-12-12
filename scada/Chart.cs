@@ -40,30 +40,44 @@ namespace scada
         private void Chart_Load(object sender, EventArgs e)
         {
             
-             /*connection = new SqlConnection(str);
+             connection = new SqlConnection(str);
              connection.Open();
-             LoadData();*/
-            lvChartAppBindingSource2.DataSource = new List<LvChartApp>();
-                            
+             LoadData();     
+
             cartesianChart1.AxisX.Add(new LiveCharts.Wpf.Axis
-            {
+            {                
                 Title = "Month",
                 Labels = new[] { "Jan", "Feb", "Mar", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
             });
             cartesianChart1.AxisY.Add(new LiveCharts.Wpf.Axis
             {
                 Title = "TongKhoiLuong",
-                LabelFormatter = value =>value.ToString("0")
+                LabelFormatter = value => value.ToString("0")
             });
             cartesianChart1.LegendLocation = LiveCharts.LegendLocation.Right;
-
+            this.btnLoad_Click(sender, e);
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
-            var years = (from o in lvChartAppBindingSource2.DataSource as List<LvChartApp>
+
+            List<LvChartApp> items = new List<LvChartApp>();
+            int index = 0;
+
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+            {
+                index++;
+                if (index < dataGridView1.Rows.Count)
+                {
+                    items.Add(new LvChartApp(Convert.ToInt32(dr.Cells[0].Value),
+                    Convert.ToInt32(dr.Cells[1].Value), Convert.ToInt32(dr.Cells[2].Value),
+                    Convert.ToDouble(dr.Cells[3].Value)));                   
+                }
+            }
+
+            var years = (from o in items
                          select new { Year = o.Year }).Distinct();
             foreach(var year in years)
             {
@@ -71,7 +85,7 @@ namespace scada
                 for(int month = 1; month < 12; month++)
                 {
                     double value = 0;
-                    var data = from o in lvChartAppBindingSource2.DataSource as List<LvChartApp>
+                    var data = from o in items
                                where o.Year.Equals(year.Year) && o.Month.Equals(month)
                                orderby o.Month ascending
                                select new { o.KhoiLuong, o.Month };

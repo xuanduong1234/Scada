@@ -15,5 +15,14 @@ namespace scada
         public int Month { get; set; }
 
         public double KhoiLuong { get; set; }
+
+        public LvChartApp() {  }
+
+        public LvChartApp(int id, int year, int month, double khoiLuong) {
+            this.id = id;
+            this.Year = year;
+            this.Month = month;
+            this.KhoiLuong = khoiLuong;
+        }
     }
 }

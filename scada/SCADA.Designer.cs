@@ -49,6 +49,7 @@ namespace scada
             this.label5 = new System.Windows.Forms.Label();
             this.btnAuto = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnWeigh = new System.Windows.Forms.Button();
             this.btnEStop = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
@@ -73,29 +74,37 @@ namespace scada
             this.standardControl25 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl26 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl12 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl14 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl15 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl27 = new SymbolFactoryDotNet.StandardControl();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.standardControl17 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl18 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl22 = new SymbolFactoryDotNet.StandardControl();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.standardControl14 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl15 = new SymbolFactoryDotNet.StandardControl();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.standardControl27 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl17 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl18 = new SymbolFactoryDotNet.StandardControl();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.standardControl28 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl30 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl31 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl32 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl19 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl57 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl23 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl58 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl21 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl59 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl60 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl61 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl56 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl22 = new SymbolFactoryDotNet.StandardControl();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.standardControl24 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl30 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl32 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl28 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl31 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl29 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl34 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl35 = new SymbolFactoryDotNet.StandardControl();
@@ -109,7 +118,6 @@ namespace scada
             this.standardControl13 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl16 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl20 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl43 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl44 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl45 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl46 = new SymbolFactoryDotNet.StandardControl();
@@ -120,21 +128,13 @@ namespace scada
             this.standardControl51 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl52 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl33 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl43 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl40 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl42 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl53 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl54 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl55 = new SymbolFactoryDotNet.StandardControl();
-            this.btnWeigh = new System.Windows.Forms.Button();
-            this.standardControl19 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl57 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl23 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl58 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl21 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl59 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl60 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl61 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl56 = new SymbolFactoryDotNet.StandardControl();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -159,17 +159,25 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl27)).BeginInit();
-            this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl35)).BeginInit();
@@ -181,7 +189,6 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl46)).BeginInit();
@@ -192,20 +199,13 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl53)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl57)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl61)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl56)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -403,6 +403,20 @@ namespace scada
             this.panel3.Size = new System.Drawing.Size(218, 411);
             this.panel3.TabIndex = 15;
             // 
+            // btnWeigh
+            // 
+            this.btnWeigh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWeigh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWeigh.ForeColor = System.Drawing.Color.Red;
+            this.btnWeigh.Location = new System.Drawing.Point(0, 360);
+            this.btnWeigh.Name = "btnWeigh";
+            this.btnWeigh.Size = new System.Drawing.Size(218, 45);
+            this.btnWeigh.TabIndex = 9;
+            this.btnWeigh.TabStop = false;
+            this.btnWeigh.Text = "About";
+            this.btnWeigh.UseVisualStyleBackColor = true;
+            this.btnWeigh.Click += new System.EventHandler(this.btnWeigh_Click);
+            // 
             // btnEStop
             // 
             this.btnEStop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -500,7 +514,7 @@ namespace scada
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(20)))));
             this.panel7.Controls.Add(this.lblQuyen);
             this.panel7.Location = new System.Drawing.Point(3, 158);
             this.panel7.Name = "panel7";
@@ -871,6 +885,50 @@ namespace scada
             this.standardControl12.SymbolHandle = ((long)(2065787901));
             this.standardControl12.TabIndex = 18;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Lime;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(56, 14);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 16);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Xi măng";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Lime;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(13, 51);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 16);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Cát";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Lime;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(425, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Tro bay";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Lime;
+            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(467, 51);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(108, 16);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Phụ gia khoáng";
+            // 
             // standardControl14
             // 
             this.standardControl14.AnalogIntValue1 = ((short)(0));
@@ -917,75 +975,6 @@ namespace scada
             this.standardControl15.SymbolHandle = ((long)(1691236992));
             this.standardControl15.TabIndex = 3;
             // 
-            // standardControl27
-            // 
-            this.standardControl27.AnalogIntValue1 = ((short)(0));
-            this.standardControl27.AnalogValue1 = 0D;
-            this.standardControl27.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl27.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl27.Category = "1MH.cat2";
-            this.standardControl27.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl27.DebugData"));
-            this.standardControl27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl27.Location = new System.Drawing.Point(3, 14);
-            this.standardControl27.Name = "standardControl27";
-            this.standardControl27.Size = new System.Drawing.Size(108, 94);
-            this.standardControl27.SymbolHandle = ((long)(1732623796));
-            this.standardControl27.TabIndex = 16;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.standardControl55);
-            this.panel2.Controls.Add(this.standardControl54);
-            this.panel2.Controls.Add(this.standardControl53);
-            this.panel2.Controls.Add(this.standardControl42);
-            this.panel2.Controls.Add(this.standardControl40);
-            this.panel2.Controls.Add(this.standardControl43);
-            this.panel2.Controls.Add(this.standardControl33);
-            this.panel2.Controls.Add(this.standardControl52);
-            this.panel2.Controls.Add(this.standardControl51);
-            this.panel2.Controls.Add(this.standardControl50);
-            this.panel2.Controls.Add(this.standardControl49);
-            this.panel2.Controls.Add(this.standardControl48);
-            this.panel2.Controls.Add(this.standardControl47);
-            this.panel2.Controls.Add(this.standardControl46);
-            this.panel2.Controls.Add(this.standardControl45);
-            this.panel2.Controls.Add(this.standardControl44);
-            this.panel2.Controls.Add(this.standardControl20);
-            this.panel2.Controls.Add(this.standardControl16);
-            this.panel2.Controls.Add(this.standardControl13);
-            this.panel2.Controls.Add(this.standardControl41);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.standardControl39);
-            this.panel2.Controls.Add(this.standardControl38);
-            this.panel2.Controls.Add(this.standardControl37);
-            this.panel2.Controls.Add(this.standardControl36);
-            this.panel2.Controls.Add(this.standardControl35);
-            this.panel2.Controls.Add(this.standardControl34);
-            this.panel2.Controls.Add(this.standardControl29);
-            this.panel2.Controls.Add(this.standardControl24);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.standardControl22);
-            this.panel2.Controls.Add(this.panel8);
-            this.panel2.Controls.Add(this.standardControl15);
-            this.panel2.Controls.Add(this.standardControl14);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Location = new System.Drawing.Point(224, 59);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(935, 552);
-            this.panel2.TabIndex = 17;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.standardControl56);
@@ -1012,10 +1001,34 @@ namespace scada
             this.panel8.Size = new System.Drawing.Size(345, 186);
             this.panel8.TabIndex = 17;
             // 
+            // standardControl27
+            // 
+            this.standardControl27.AnalogIntValue1 = ((short)(0));
+            this.standardControl27.AnalogValue1 = 0D;
+            this.standardControl27.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl27.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl27.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl27.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl27.Category = "1MH.cat2";
+            this.standardControl27.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl27.DebugData"));
+            this.standardControl27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl27.Location = new System.Drawing.Point(3, 14);
+            this.standardControl27.Name = "standardControl27";
+            this.standardControl27.Size = new System.Drawing.Size(108, 94);
+            this.standardControl27.SymbolHandle = ((long)(1732623796));
+            this.standardControl27.TabIndex = 16;
+            // 
             // standardControl17
             // 
             this.standardControl17.AnalogIntValue1 = ((short)(0));
             this.standardControl17.AnalogValue1 = 0D;
+            this.standardControl17.BackColor = System.Drawing.Color.Transparent;
             this.standardControl17.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1038,6 +1051,7 @@ namespace scada
             // 
             this.standardControl18.AnalogIntValue1 = ((short)(0));
             this.standardControl18.AnalogValue1 = 0D;
+            this.standardControl18.BackColor = System.Drawing.Color.Transparent;
             this.standardControl18.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1055,29 +1069,6 @@ namespace scada
             this.standardControl18.Size = new System.Drawing.Size(108, 94);
             this.standardControl18.SymbolHandle = ((long)(1732623796));
             this.standardControl18.TabIndex = 18;
-            // 
-            // standardControl22
-            // 
-            this.standardControl22.AnalogIntValue1 = ((short)(0));
-            this.standardControl22.AnalogValue1 = 0D;
-            this.standardControl22.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl22.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl22.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl22.Category = "1TANK.cat2";
-            this.standardControl22.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl22.DebugData"));
-            this.standardControl22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl22.Location = new System.Drawing.Point(95, 186);
-            this.standardControl22.Name = "standardControl22";
-            this.standardControl22.Size = new System.Drawing.Size(139, 90);
-            this.standardControl22.SymbolHandle = ((long)(1691236992));
-            this.standardControl22.TabIndex = 18;
             // 
             // label7
             // 
@@ -1112,49 +1103,338 @@ namespace scada
             this.label9.TabIndex = 25;
             this.label9.Text = "PG3";
             // 
-            // label10
+            // standardControl28
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Lime;
-            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(56, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 16);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Xi măng";
+            this.standardControl28.AnalogIntValue1 = ((short)(0));
+            this.standardControl28.AnalogValue1 = 0D;
+            this.standardControl28.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl28.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl28.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl28.Category = "1PIPE.cat2";
+            this.standardControl28.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl28.DebugData"));
+            this.standardControl28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl28.Location = new System.Drawing.Point(64, 132);
+            this.standardControl28.Name = "standardControl28";
+            this.standardControl28.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl28.Size = new System.Drawing.Size(59, 85);
+            this.standardControl28.SymbolHandle = ((long)(1088408125));
+            this.standardControl28.TabIndex = 34;
             // 
-            // label11
+            // standardControl30
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Lime;
-            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(13, 51);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 16);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Cát";
+            this.standardControl30.AnalogIntValue1 = ((short)(0));
+            this.standardControl30.AnalogValue1 = 0D;
+            this.standardControl30.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl30.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl30.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl30.Category = "1PIPE.cat2";
+            this.standardControl30.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl30.DebugData"));
+            this.standardControl30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl30.Location = new System.Drawing.Point(132, 127);
+            this.standardControl30.Name = "standardControl30";
+            this.standardControl30.Size = new System.Drawing.Size(65, 59);
+            this.standardControl30.SymbolHandle = ((long)(1088408125));
+            this.standardControl30.TabIndex = 36;
             // 
-            // label12
+            // standardControl31
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Lime;
-            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(425, 14);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 16);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Tro bay";
+            this.standardControl31.AnalogIntValue1 = ((short)(0));
+            this.standardControl31.AnalogValue1 = 0D;
+            this.standardControl31.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl31.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl31.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl31.Category = "1PIPE.cat2";
+            this.standardControl31.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl31.DebugData"));
+            this.standardControl31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl31.Location = new System.Drawing.Point(-20, 119);
+            this.standardControl31.Name = "standardControl31";
+            this.standardControl31.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
+            this.standardControl31.Size = new System.Drawing.Size(132, 53);
+            this.standardControl31.SymbolHandle = ((long)(1088408125));
+            this.standardControl31.TabIndex = 37;
             // 
-            // label13
+            // standardControl32
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Lime;
-            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(467, 51);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(108, 16);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Phụ gia khoáng";
+            this.standardControl32.AnalogIntValue1 = ((short)(0));
+            this.standardControl32.AnalogValue1 = 0D;
+            this.standardControl32.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl32.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl32.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl32.Category = "1PIPE.cat2";
+            this.standardControl32.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl32.DebugData"));
+            this.standardControl32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl32.Location = new System.Drawing.Point(40, 151);
+            this.standardControl32.Name = "standardControl32";
+            this.standardControl32.Size = new System.Drawing.Size(31, 31);
+            this.standardControl32.SymbolHandle = ((long)(328113829));
+            this.standardControl32.TabIndex = 38;
+            // 
+            // standardControl19
+            // 
+            this.standardControl19.AnalogIntValue1 = ((short)(0));
+            this.standardControl19.AnalogValue1 = 0D;
+            this.standardControl19.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl19.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl19.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl19.Category = "1VLV.cat2";
+            this.standardControl19.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl19.DebugData"));
+            this.standardControl19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl19.Location = new System.Drawing.Point(-3, 78);
+            this.standardControl19.Name = "standardControl19";
+            this.standardControl19.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl19.Size = new System.Drawing.Size(64, 69);
+            this.standardControl19.SymbolHandle = ((long)(1808610302));
+            this.standardControl19.TabIndex = 39;
+            // 
+            // standardControl57
+            // 
+            this.standardControl57.AnalogIntValue1 = ((short)(0));
+            this.standardControl57.AnalogValue1 = 0D;
+            this.standardControl57.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl57.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl57.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl57.Category = "1VLV.cat2";
+            this.standardControl57.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl57.DebugData"));
+            this.standardControl57.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl57.Location = new System.Drawing.Point(113, 78);
+            this.standardControl57.Name = "standardControl57";
+            this.standardControl57.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl57.Size = new System.Drawing.Size(64, 69);
+            this.standardControl57.SymbolHandle = ((long)(1808610302));
+            this.standardControl57.TabIndex = 40;
+            // 
+            // standardControl23
+            // 
+            this.standardControl23.AnalogIntValue1 = ((short)(0));
+            this.standardControl23.AnalogValue1 = 0D;
+            this.standardControl23.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl23.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl23.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl23.Category = "1PIPE.cat2";
+            this.standardControl23.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl23.DebugData"));
+            this.standardControl23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl23.Location = new System.Drawing.Point(224, 114);
+            this.standardControl23.Name = "standardControl23";
+            this.standardControl23.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
+            this.standardControl23.Size = new System.Drawing.Size(132, 53);
+            this.standardControl23.SymbolHandle = ((long)(1088408125));
+            this.standardControl23.TabIndex = 41;
+            // 
+            // standardControl58
+            // 
+            this.standardControl58.AnalogIntValue1 = ((short)(0));
+            this.standardControl58.AnalogValue1 = 0D;
+            this.standardControl58.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl58.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl58.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl58.Category = "1PIPE.cat2";
+            this.standardControl58.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl58.DebugData"));
+            this.standardControl58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl58.Location = new System.Drawing.Point(224, 132);
+            this.standardControl58.Name = "standardControl58";
+            this.standardControl58.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl58.Size = new System.Drawing.Size(56, 85);
+            this.standardControl58.SymbolHandle = ((long)(1088408125));
+            this.standardControl58.TabIndex = 43;
+            // 
+            // standardControl21
+            // 
+            this.standardControl21.AnalogIntValue1 = ((short)(0));
+            this.standardControl21.AnalogValue1 = 0D;
+            this.standardControl21.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl21.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl21.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl21.Category = "1PIPE.cat2";
+            this.standardControl21.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl21.DebugData"));
+            this.standardControl21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl21.Location = new System.Drawing.Point(268, 152);
+            this.standardControl21.Name = "standardControl21";
+            this.standardControl21.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl21.Size = new System.Drawing.Size(31, 31);
+            this.standardControl21.SymbolHandle = ((long)(328113829));
+            this.standardControl21.TabIndex = 44;
+            // 
+            // standardControl59
+            // 
+            this.standardControl59.AnalogIntValue1 = ((short)(0));
+            this.standardControl59.AnalogValue1 = 0D;
+            this.standardControl59.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl59.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl59.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl59.Category = "1PIPE.cat2";
+            this.standardControl59.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl59.DebugData"));
+            this.standardControl59.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl59.Location = new System.Drawing.Point(187, 167);
+            this.standardControl59.Name = "standardControl59";
+            this.standardControl59.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate270;
+            this.standardControl59.Size = new System.Drawing.Size(31, 31);
+            this.standardControl59.SymbolHandle = ((long)(328113829));
+            this.standardControl59.TabIndex = 69;
+            // 
+            // standardControl60
+            // 
+            this.standardControl60.AnalogIntValue1 = ((short)(0));
+            this.standardControl60.AnalogValue1 = 0D;
+            this.standardControl60.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl60.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl60.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl60.Category = "1PIPE.cat2";
+            this.standardControl60.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl60.DebugData"));
+            this.standardControl60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl60.Location = new System.Drawing.Point(203, 132);
+            this.standardControl60.Name = "standardControl60";
+            this.standardControl60.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl60.Size = new System.Drawing.Size(56, 85);
+            this.standardControl60.SymbolHandle = ((long)(1088408125));
+            this.standardControl60.TabIndex = 70;
+            // 
+            // standardControl61
+            // 
+            this.standardControl61.AnalogIntValue1 = ((short)(0));
+            this.standardControl61.AnalogValue1 = 0D;
+            this.standardControl61.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl61.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl61.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl61.Category = "1VLV.cat2";
+            this.standardControl61.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl61.DebugData"));
+            this.standardControl61.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl61.Location = new System.Drawing.Point(234, 78);
+            this.standardControl61.Name = "standardControl61";
+            this.standardControl61.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl61.Size = new System.Drawing.Size(64, 69);
+            this.standardControl61.SymbolHandle = ((long)(1808610302));
+            this.standardControl61.TabIndex = 71;
+            // 
+            // standardControl56
+            // 
+            this.standardControl56.AnalogIntValue1 = ((short)(0));
+            this.standardControl56.AnalogValue1 = 0D;
+            this.standardControl56.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl56.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl56.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl56.Category = "1PIPE.cat2";
+            this.standardControl56.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl56.DebugData"));
+            this.standardControl56.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl56.Location = new System.Drawing.Point(104, 167);
+            this.standardControl56.Name = "standardControl56";
+            this.standardControl56.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
+            this.standardControl56.Size = new System.Drawing.Size(31, 31);
+            this.standardControl56.SymbolHandle = ((long)(328113829));
+            this.standardControl56.TabIndex = 72;
+            // 
+            // standardControl22
+            // 
+            this.standardControl22.AnalogIntValue1 = ((short)(0));
+            this.standardControl22.AnalogValue1 = 0D;
+            this.standardControl22.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl22.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl22.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl22.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl22.Category = "1TANK.cat2";
+            this.standardControl22.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl22.DebugData"));
+            this.standardControl22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl22.Location = new System.Drawing.Point(95, 186);
+            this.standardControl22.Name = "standardControl22";
+            this.standardControl22.Size = new System.Drawing.Size(139, 90);
+            this.standardControl22.SymbolHandle = ((long)(1691236992));
+            this.standardControl22.TabIndex = 18;
             // 
             // label14
             // 
@@ -1212,100 +1492,11 @@ namespace scada
             this.standardControl24.SymbolHandle = ((long)(483841513));
             this.standardControl24.TabIndex = 33;
             // 
-            // standardControl30
-            // 
-            this.standardControl30.AnalogIntValue1 = ((short)(0));
-            this.standardControl30.AnalogValue1 = 0D;
-            this.standardControl30.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl30.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl30.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl30.Category = "1PIPE.cat2";
-            this.standardControl30.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl30.DebugData"));
-            this.standardControl30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl30.Location = new System.Drawing.Point(132, 127);
-            this.standardControl30.Name = "standardControl30";
-            this.standardControl30.Size = new System.Drawing.Size(65, 59);
-            this.standardControl30.SymbolHandle = ((long)(1088408125));
-            this.standardControl30.TabIndex = 36;
-            // 
-            // standardControl32
-            // 
-            this.standardControl32.AnalogIntValue1 = ((short)(0));
-            this.standardControl32.AnalogValue1 = 0D;
-            this.standardControl32.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl32.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl32.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl32.Category = "1PIPE.cat2";
-            this.standardControl32.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl32.DebugData"));
-            this.standardControl32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl32.Location = new System.Drawing.Point(40, 151);
-            this.standardControl32.Name = "standardControl32";
-            this.standardControl32.Size = new System.Drawing.Size(31, 31);
-            this.standardControl32.SymbolHandle = ((long)(328113829));
-            this.standardControl32.TabIndex = 38;
-            // 
-            // standardControl28
-            // 
-            this.standardControl28.AnalogIntValue1 = ((short)(0));
-            this.standardControl28.AnalogValue1 = 0D;
-            this.standardControl28.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl28.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl28.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl28.Category = "1PIPE.cat2";
-            this.standardControl28.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl28.DebugData"));
-            this.standardControl28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl28.Location = new System.Drawing.Point(64, 132);
-            this.standardControl28.Name = "standardControl28";
-            this.standardControl28.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl28.Size = new System.Drawing.Size(59, 85);
-            this.standardControl28.SymbolHandle = ((long)(1088408125));
-            this.standardControl28.TabIndex = 34;
-            // 
-            // standardControl31
-            // 
-            this.standardControl31.AnalogIntValue1 = ((short)(0));
-            this.standardControl31.AnalogValue1 = 0D;
-            this.standardControl31.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl31.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl31.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl31.Category = "1PIPE.cat2";
-            this.standardControl31.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl31.DebugData"));
-            this.standardControl31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl31.Location = new System.Drawing.Point(-20, 119);
-            this.standardControl31.Name = "standardControl31";
-            this.standardControl31.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
-            this.standardControl31.Size = new System.Drawing.Size(132, 53);
-            this.standardControl31.SymbolHandle = ((long)(1088408125));
-            this.standardControl31.TabIndex = 37;
-            // 
             // standardControl29
             // 
             this.standardControl29.AnalogIntValue1 = ((short)(0));
             this.standardControl29.AnalogValue1 = 0D;
+            this.standardControl29.BackColor = System.Drawing.Color.Transparent;
             this.standardControl29.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl29.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl29.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1328,6 +1519,7 @@ namespace scada
             // 
             this.standardControl34.AnalogIntValue1 = ((short)(0));
             this.standardControl34.AnalogValue1 = 0D;
+            this.standardControl34.BackColor = System.Drawing.Color.Transparent;
             this.standardControl34.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl34.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl34.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1350,6 +1542,7 @@ namespace scada
             // 
             this.standardControl35.AnalogIntValue1 = ((short)(0));
             this.standardControl35.AnalogValue1 = 0D;
+            this.standardControl35.BackColor = System.Drawing.Color.Transparent;
             this.standardControl35.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl35.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl35.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1442,6 +1635,7 @@ namespace scada
             // 
             this.standardControl39.AnalogIntValue1 = ((short)(0));
             this.standardControl39.AnalogValue1 = 0D;
+            this.standardControl39.BackColor = System.Drawing.Color.Transparent;
             this.standardControl39.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl39.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl39.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1486,6 +1680,7 @@ namespace scada
             // 
             this.standardControl41.AnalogIntValue1 = ((short)(0));
             this.standardControl41.AnalogValue1 = 0D;
+            this.standardControl41.BackColor = System.Drawing.Color.Transparent;
             this.standardControl41.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl41.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl41.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1508,6 +1703,7 @@ namespace scada
             // 
             this.standardControl13.AnalogIntValue1 = ((short)(0));
             this.standardControl13.AnalogValue1 = 0D;
+            this.standardControl13.BackColor = System.Drawing.Color.Transparent;
             this.standardControl13.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl13.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl13.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1531,6 +1727,7 @@ namespace scada
             // 
             this.standardControl16.AnalogIntValue1 = ((short)(0));
             this.standardControl16.AnalogValue1 = 0D;
+            this.standardControl16.BackColor = System.Drawing.Color.Transparent;
             this.standardControl16.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl16.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl16.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1554,6 +1751,7 @@ namespace scada
             // 
             this.standardControl20.AnalogIntValue1 = ((short)(0));
             this.standardControl20.AnalogValue1 = 0D;
+            this.standardControl20.BackColor = System.Drawing.Color.Transparent;
             this.standardControl20.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1573,32 +1771,11 @@ namespace scada
             this.standardControl20.SymbolHandle = ((long)(1750970588));
             this.standardControl20.TabIndex = 54;
             // 
-            // standardControl43
-            // 
-            this.standardControl43.AnalogIntValue1 = ((short)(0));
-            this.standardControl43.AnalogValue1 = 0D;
-            this.standardControl43.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl43.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl43.Category = "1PIPE.cat2";
-            this.standardControl43.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl43.DebugData"));
-            this.standardControl43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl43.Location = new System.Drawing.Point(608, 312);
-            this.standardControl43.Name = "standardControl43";
-            this.standardControl43.Size = new System.Drawing.Size(91, 53);
-            this.standardControl43.SymbolHandle = ((long)(1762314528));
-            this.standardControl43.TabIndex = 39;
-            // 
             // standardControl44
             // 
             this.standardControl44.AnalogIntValue1 = ((short)(0));
             this.standardControl44.AnalogValue1 = 0D;
+            this.standardControl44.BackColor = System.Drawing.Color.Transparent;
             this.standardControl44.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl44.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl44.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1621,6 +1798,7 @@ namespace scada
             // 
             this.standardControl45.AnalogIntValue1 = ((short)(0));
             this.standardControl45.AnalogValue1 = 0D;
+            this.standardControl45.BackColor = System.Drawing.Color.Transparent;
             this.standardControl45.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl45.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl45.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1643,6 +1821,7 @@ namespace scada
             // 
             this.standardControl46.AnalogIntValue1 = ((short)(0));
             this.standardControl46.AnalogValue1 = 0D;
+            this.standardControl46.BackColor = System.Drawing.Color.Transparent;
             this.standardControl46.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl46.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl46.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1665,6 +1844,7 @@ namespace scada
             // 
             this.standardControl47.AnalogIntValue1 = ((short)(0));
             this.standardControl47.AnalogValue1 = 0D;
+            this.standardControl47.BackColor = System.Drawing.Color.Transparent;
             this.standardControl47.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl47.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl47.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1687,6 +1867,7 @@ namespace scada
             // 
             this.standardControl48.AnalogIntValue1 = ((short)(0));
             this.standardControl48.AnalogValue1 = 0D;
+            this.standardControl48.BackColor = System.Drawing.Color.Transparent;
             this.standardControl48.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1709,6 +1890,7 @@ namespace scada
             // 
             this.standardControl49.AnalogIntValue1 = ((short)(0));
             this.standardControl49.AnalogValue1 = 0D;
+            this.standardControl49.BackColor = System.Drawing.Color.Transparent;
             this.standardControl49.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1731,6 +1913,7 @@ namespace scada
             // 
             this.standardControl50.AnalogIntValue1 = ((short)(0));
             this.standardControl50.AnalogValue1 = 0D;
+            this.standardControl50.BackColor = System.Drawing.Color.Transparent;
             this.standardControl50.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl50.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl50.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1753,6 +1936,7 @@ namespace scada
             // 
             this.standardControl51.AnalogIntValue1 = ((short)(0));
             this.standardControl51.AnalogValue1 = 0D;
+            this.standardControl51.BackColor = System.Drawing.Color.Transparent;
             this.standardControl51.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl51.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl51.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1775,6 +1959,7 @@ namespace scada
             // 
             this.standardControl52.AnalogIntValue1 = ((short)(0));
             this.standardControl52.AnalogValue1 = 0D;
+            this.standardControl52.BackColor = System.Drawing.Color.Transparent;
             this.standardControl52.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl52.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl52.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1797,6 +1982,7 @@ namespace scada
             // 
             this.standardControl33.AnalogIntValue1 = ((short)(0));
             this.standardControl33.AnalogValue1 = 0D;
+            this.standardControl33.BackColor = System.Drawing.Color.Transparent;
             this.standardControl33.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl33.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl33.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1815,10 +2001,34 @@ namespace scada
             this.standardControl33.SymbolHandle = ((long)(2078383901));
             this.standardControl33.TabIndex = 63;
             // 
+            // standardControl43
+            // 
+            this.standardControl43.AnalogIntValue1 = ((short)(0));
+            this.standardControl43.AnalogValue1 = 0D;
+            this.standardControl43.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl43.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl43.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl43.Category = "1PIPE.cat2";
+            this.standardControl43.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl43.DebugData"));
+            this.standardControl43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl43.Location = new System.Drawing.Point(608, 312);
+            this.standardControl43.Name = "standardControl43";
+            this.standardControl43.Size = new System.Drawing.Size(91, 53);
+            this.standardControl43.SymbolHandle = ((long)(1762314528));
+            this.standardControl43.TabIndex = 39;
+            // 
             // standardControl40
             // 
             this.standardControl40.AnalogIntValue1 = ((short)(0));
             this.standardControl40.AnalogValue1 = 0D;
+            this.standardControl40.BackColor = System.Drawing.Color.Transparent;
             this.standardControl40.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl40.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl40.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1842,6 +2052,7 @@ namespace scada
             // 
             this.standardControl42.AnalogIntValue1 = ((short)(0));
             this.standardControl42.AnalogValue1 = 0D;
+            this.standardControl42.BackColor = System.Drawing.Color.Transparent;
             this.standardControl42.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl42.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl42.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1865,6 +2076,7 @@ namespace scada
             // 
             this.standardControl53.AnalogIntValue1 = ((short)(0));
             this.standardControl53.AnalogValue1 = 0D;
+            this.standardControl53.BackColor = System.Drawing.Color.Transparent;
             this.standardControl53.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl53.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl53.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1888,6 +2100,7 @@ namespace scada
             // 
             this.standardControl54.AnalogIntValue1 = ((short)(0));
             this.standardControl54.AnalogValue1 = 0D;
+            this.standardControl54.BackColor = System.Drawing.Color.Transparent;
             this.standardControl54.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl54.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl54.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1911,6 +2124,7 @@ namespace scada
             // 
             this.standardControl55.AnalogIntValue1 = ((short)(0));
             this.standardControl55.AnalogValue1 = 0D;
+            this.standardControl55.BackColor = System.Drawing.Color.Transparent;
             this.standardControl55.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
             this.standardControl55.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
             this.standardControl55.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
@@ -1930,232 +2144,60 @@ namespace scada
             this.standardControl55.SymbolHandle = ((long)(1946842866));
             this.standardControl55.TabIndex = 68;
             // 
-            // btnWeigh
+            // panel2
             // 
-            this.btnWeigh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnWeigh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWeigh.ForeColor = System.Drawing.Color.Red;
-            this.btnWeigh.Location = new System.Drawing.Point(0, 360);
-            this.btnWeigh.Name = "btnWeigh";
-            this.btnWeigh.Size = new System.Drawing.Size(218, 45);
-            this.btnWeigh.TabIndex = 9;
-            this.btnWeigh.TabStop = false;
-            this.btnWeigh.Text = "About";
-            this.btnWeigh.UseVisualStyleBackColor = true;
-            // 
-            // standardControl19
-            // 
-            this.standardControl19.AnalogIntValue1 = ((short)(0));
-            this.standardControl19.AnalogValue1 = 0D;
-            this.standardControl19.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl19.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl19.Category = "1VLV.cat2";
-            this.standardControl19.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl19.DebugData"));
-            this.standardControl19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl19.Location = new System.Drawing.Point(-3, 78);
-            this.standardControl19.Name = "standardControl19";
-            this.standardControl19.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl19.Size = new System.Drawing.Size(64, 69);
-            this.standardControl19.SymbolHandle = ((long)(1808610302));
-            this.standardControl19.TabIndex = 39;
-            // 
-            // standardControl57
-            // 
-            this.standardControl57.AnalogIntValue1 = ((short)(0));
-            this.standardControl57.AnalogValue1 = 0D;
-            this.standardControl57.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl57.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl57.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl57.Category = "1VLV.cat2";
-            this.standardControl57.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl57.DebugData"));
-            this.standardControl57.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl57.Location = new System.Drawing.Point(113, 78);
-            this.standardControl57.Name = "standardControl57";
-            this.standardControl57.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl57.Size = new System.Drawing.Size(64, 69);
-            this.standardControl57.SymbolHandle = ((long)(1808610302));
-            this.standardControl57.TabIndex = 40;
-            // 
-            // standardControl23
-            // 
-            this.standardControl23.AnalogIntValue1 = ((short)(0));
-            this.standardControl23.AnalogValue1 = 0D;
-            this.standardControl23.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl23.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl23.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl23.Category = "1PIPE.cat2";
-            this.standardControl23.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl23.DebugData"));
-            this.standardControl23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl23.Location = new System.Drawing.Point(224, 114);
-            this.standardControl23.Name = "standardControl23";
-            this.standardControl23.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
-            this.standardControl23.Size = new System.Drawing.Size(132, 53);
-            this.standardControl23.SymbolHandle = ((long)(1088408125));
-            this.standardControl23.TabIndex = 41;
-            // 
-            // standardControl58
-            // 
-            this.standardControl58.AnalogIntValue1 = ((short)(0));
-            this.standardControl58.AnalogValue1 = 0D;
-            this.standardControl58.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl58.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl58.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl58.Category = "1PIPE.cat2";
-            this.standardControl58.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl58.DebugData"));
-            this.standardControl58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl58.Location = new System.Drawing.Point(224, 132);
-            this.standardControl58.Name = "standardControl58";
-            this.standardControl58.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl58.Size = new System.Drawing.Size(56, 85);
-            this.standardControl58.SymbolHandle = ((long)(1088408125));
-            this.standardControl58.TabIndex = 43;
-            // 
-            // standardControl21
-            // 
-            this.standardControl21.AnalogIntValue1 = ((short)(0));
-            this.standardControl21.AnalogValue1 = 0D;
-            this.standardControl21.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl21.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl21.Category = "1PIPE.cat2";
-            this.standardControl21.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl21.DebugData"));
-            this.standardControl21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl21.Location = new System.Drawing.Point(268, 152);
-            this.standardControl21.Name = "standardControl21";
-            this.standardControl21.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl21.Size = new System.Drawing.Size(31, 31);
-            this.standardControl21.SymbolHandle = ((long)(328113829));
-            this.standardControl21.TabIndex = 44;
-            // 
-            // standardControl59
-            // 
-            this.standardControl59.AnalogIntValue1 = ((short)(0));
-            this.standardControl59.AnalogValue1 = 0D;
-            this.standardControl59.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl59.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl59.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl59.Category = "1PIPE.cat2";
-            this.standardControl59.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl59.DebugData"));
-            this.standardControl59.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl59.Location = new System.Drawing.Point(187, 167);
-            this.standardControl59.Name = "standardControl59";
-            this.standardControl59.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate270;
-            this.standardControl59.Size = new System.Drawing.Size(31, 31);
-            this.standardControl59.SymbolHandle = ((long)(328113829));
-            this.standardControl59.TabIndex = 69;
-            // 
-            // standardControl60
-            // 
-            this.standardControl60.AnalogIntValue1 = ((short)(0));
-            this.standardControl60.AnalogValue1 = 0D;
-            this.standardControl60.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl60.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl60.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl60.Category = "1PIPE.cat2";
-            this.standardControl60.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl60.DebugData"));
-            this.standardControl60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl60.Location = new System.Drawing.Point(203, 132);
-            this.standardControl60.Name = "standardControl60";
-            this.standardControl60.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl60.Size = new System.Drawing.Size(56, 85);
-            this.standardControl60.SymbolHandle = ((long)(1088408125));
-            this.standardControl60.TabIndex = 70;
-            // 
-            // standardControl61
-            // 
-            this.standardControl61.AnalogIntValue1 = ((short)(0));
-            this.standardControl61.AnalogValue1 = 0D;
-            this.standardControl61.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl61.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl61.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl61.Category = "1VLV.cat2";
-            this.standardControl61.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl61.DebugData"));
-            this.standardControl61.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl61.Location = new System.Drawing.Point(234, 78);
-            this.standardControl61.Name = "standardControl61";
-            this.standardControl61.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl61.Size = new System.Drawing.Size(64, 69);
-            this.standardControl61.SymbolHandle = ((long)(1808610302));
-            this.standardControl61.TabIndex = 71;
-            // 
-            // standardControl56
-            // 
-            this.standardControl56.AnalogIntValue1 = ((short)(0));
-            this.standardControl56.AnalogValue1 = 0D;
-            this.standardControl56.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl56.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl56.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl56.Category = "1PIPE.cat2";
-            this.standardControl56.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl56.DebugData"));
-            this.standardControl56.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl56.Location = new System.Drawing.Point(104, 167);
-            this.standardControl56.Name = "standardControl56";
-            this.standardControl56.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
-            this.standardControl56.Size = new System.Drawing.Size(31, 31);
-            this.standardControl56.SymbolHandle = ((long)(328113829));
-            this.standardControl56.TabIndex = 72;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(20)))));
+            this.panel2.Controls.Add(this.standardControl55);
+            this.panel2.Controls.Add(this.standardControl54);
+            this.panel2.Controls.Add(this.standardControl53);
+            this.panel2.Controls.Add(this.standardControl42);
+            this.panel2.Controls.Add(this.standardControl40);
+            this.panel2.Controls.Add(this.standardControl43);
+            this.panel2.Controls.Add(this.standardControl33);
+            this.panel2.Controls.Add(this.standardControl52);
+            this.panel2.Controls.Add(this.standardControl51);
+            this.panel2.Controls.Add(this.standardControl50);
+            this.panel2.Controls.Add(this.standardControl49);
+            this.panel2.Controls.Add(this.standardControl48);
+            this.panel2.Controls.Add(this.standardControl47);
+            this.panel2.Controls.Add(this.standardControl46);
+            this.panel2.Controls.Add(this.standardControl45);
+            this.panel2.Controls.Add(this.standardControl44);
+            this.panel2.Controls.Add(this.standardControl20);
+            this.panel2.Controls.Add(this.standardControl16);
+            this.panel2.Controls.Add(this.standardControl13);
+            this.panel2.Controls.Add(this.standardControl41);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.standardControl39);
+            this.panel2.Controls.Add(this.standardControl38);
+            this.panel2.Controls.Add(this.standardControl37);
+            this.panel2.Controls.Add(this.standardControl36);
+            this.panel2.Controls.Add(this.standardControl35);
+            this.panel2.Controls.Add(this.standardControl34);
+            this.panel2.Controls.Add(this.standardControl29);
+            this.panel2.Controls.Add(this.standardControl24);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.standardControl22);
+            this.panel2.Controls.Add(this.panel8);
+            this.panel2.Controls.Add(this.standardControl15);
+            this.panel2.Controls.Add(this.standardControl14);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Location = new System.Drawing.Point(224, 59);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(935, 552);
+            this.panel2.TabIndex = 17;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // SCADA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(13)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1159, 636);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
@@ -2203,19 +2245,26 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl27)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl35)).EndInit();
@@ -2227,7 +2276,6 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl46)).EndInit();
@@ -2238,20 +2286,14 @@ namespace scada
             ((System.ComponentModel.ISupportInitialize)(this.standardControl51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl57)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl61)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl56)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2286,7 +2328,12 @@ namespace scada
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label lblQuyen;
+        private System.Windows.Forms.Button btnWeigh;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
         private SymbolFactoryDotNet.StandardControl standardControl12;
         private SymbolFactoryDotNet.StandardControl standardControl26;
         private SymbolFactoryDotNet.StandardControl standardControl25;
@@ -2303,57 +2350,7 @@ namespace scada
         private SymbolFactoryDotNet.StandardControl standardControl5;
         private SymbolFactoryDotNet.StandardControl standardControl14;
         private SymbolFactoryDotNet.StandardControl standardControl15;
-        private SymbolFactoryDotNet.StandardControl standardControl27;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel8;
-        private SymbolFactoryDotNet.StandardControl standardControl18;
-        private SymbolFactoryDotNet.StandardControl standardControl17;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private SymbolFactoryDotNet.StandardControl standardControl22;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private SymbolFactoryDotNet.StandardControl standardControl39;
-        private SymbolFactoryDotNet.StandardControl standardControl38;
-        private SymbolFactoryDotNet.StandardControl standardControl37;
-        private SymbolFactoryDotNet.StandardControl standardControl36;
-        private SymbolFactoryDotNet.StandardControl standardControl35;
-        private SymbolFactoryDotNet.StandardControl standardControl34;
-        private SymbolFactoryDotNet.StandardControl standardControl29;
-        private SymbolFactoryDotNet.StandardControl standardControl24;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private SymbolFactoryDotNet.StandardControl standardControl32;
-        private SymbolFactoryDotNet.StandardControl standardControl31;
-        private SymbolFactoryDotNet.StandardControl standardControl30;
-        private SymbolFactoryDotNet.StandardControl standardControl28;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button btnWeigh;
-        private SymbolFactoryDotNet.StandardControl standardControl55;
-        private SymbolFactoryDotNet.StandardControl standardControl54;
-        private SymbolFactoryDotNet.StandardControl standardControl53;
-        private SymbolFactoryDotNet.StandardControl standardControl42;
-        private SymbolFactoryDotNet.StandardControl standardControl40;
-        private SymbolFactoryDotNet.StandardControl standardControl43;
-        private SymbolFactoryDotNet.StandardControl standardControl33;
-        private SymbolFactoryDotNet.StandardControl standardControl52;
-        private SymbolFactoryDotNet.StandardControl standardControl51;
-        private SymbolFactoryDotNet.StandardControl standardControl50;
-        private SymbolFactoryDotNet.StandardControl standardControl49;
-        private SymbolFactoryDotNet.StandardControl standardControl48;
-        private SymbolFactoryDotNet.StandardControl standardControl47;
-        private SymbolFactoryDotNet.StandardControl standardControl46;
-        private SymbolFactoryDotNet.StandardControl standardControl45;
-        private SymbolFactoryDotNet.StandardControl standardControl44;
-        private SymbolFactoryDotNet.StandardControl standardControl20;
-        private SymbolFactoryDotNet.StandardControl standardControl16;
-        private SymbolFactoryDotNet.StandardControl standardControl13;
-        private SymbolFactoryDotNet.StandardControl standardControl41;
         private SymbolFactoryDotNet.StandardControl standardControl56;
         private SymbolFactoryDotNet.StandardControl standardControl61;
         private SymbolFactoryDotNet.StandardControl standardControl60;
@@ -2363,5 +2360,50 @@ namespace scada
         private SymbolFactoryDotNet.StandardControl standardControl23;
         private SymbolFactoryDotNet.StandardControl standardControl57;
         private SymbolFactoryDotNet.StandardControl standardControl19;
+        private SymbolFactoryDotNet.StandardControl standardControl32;
+        private SymbolFactoryDotNet.StandardControl standardControl31;
+        private SymbolFactoryDotNet.StandardControl standardControl30;
+        private SymbolFactoryDotNet.StandardControl standardControl28;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private SymbolFactoryDotNet.StandardControl standardControl18;
+        private SymbolFactoryDotNet.StandardControl standardControl17;
+        private SymbolFactoryDotNet.StandardControl standardControl27;
+        private SymbolFactoryDotNet.StandardControl standardControl22;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private SymbolFactoryDotNet.StandardControl standardControl24;
+        private SymbolFactoryDotNet.StandardControl standardControl29;
+        private SymbolFactoryDotNet.StandardControl standardControl34;
+        private SymbolFactoryDotNet.StandardControl standardControl35;
+        private SymbolFactoryDotNet.StandardControl standardControl36;
+        private SymbolFactoryDotNet.StandardControl standardControl37;
+        private SymbolFactoryDotNet.StandardControl standardControl38;
+        private SymbolFactoryDotNet.StandardControl standardControl39;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private SymbolFactoryDotNet.StandardControl standardControl41;
+        private SymbolFactoryDotNet.StandardControl standardControl13;
+        private SymbolFactoryDotNet.StandardControl standardControl16;
+        private SymbolFactoryDotNet.StandardControl standardControl20;
+        private SymbolFactoryDotNet.StandardControl standardControl44;
+        private SymbolFactoryDotNet.StandardControl standardControl45;
+        private SymbolFactoryDotNet.StandardControl standardControl46;
+        private SymbolFactoryDotNet.StandardControl standardControl47;
+        private SymbolFactoryDotNet.StandardControl standardControl48;
+        private SymbolFactoryDotNet.StandardControl standardControl49;
+        private SymbolFactoryDotNet.StandardControl standardControl50;
+        private SymbolFactoryDotNet.StandardControl standardControl51;
+        private SymbolFactoryDotNet.StandardControl standardControl52;
+        private SymbolFactoryDotNet.StandardControl standardControl33;
+        private SymbolFactoryDotNet.StandardControl standardControl43;
+        private SymbolFactoryDotNet.StandardControl standardControl40;
+        private SymbolFactoryDotNet.StandardControl standardControl42;
+        private SymbolFactoryDotNet.StandardControl standardControl53;
+        private SymbolFactoryDotNet.StandardControl standardControl54;
+        private SymbolFactoryDotNet.StandardControl standardControl55;
+        private System.Windows.Forms.Panel panel2;
     }
 }

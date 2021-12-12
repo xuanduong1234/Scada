@@ -32,37 +32,27 @@ namespace scada
             this.components = new System.ComponentModel.Container();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.cartesianChart1 = new LiveCharts.Wpf.CartesianChart();
-            this.lvChartAppBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.lvChartAppBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnLoad = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lvChartAppBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khoiLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource)).BeginInit();
+            this.lvChartAppBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.lvChartAppBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // elementHost1
             // 
             this.elementHost1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.elementHost1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elementHost1.ForeColor = System.Drawing.Color.Orange;
             this.elementHost1.Location = new System.Drawing.Point(12, 12);
             this.elementHost1.Name = "elementHost1";
             this.elementHost1.Size = new System.Drawing.Size(901, 202);
             this.elementHost1.TabIndex = 0;
             this.elementHost1.Child = this.cartesianChart1;
-            // 
-            // lvChartAppBindingSource1
-            // 
-            this.lvChartAppBindingSource1.DataSource = typeof(scada.LvChartApp);
-            // 
-            // lvChartAppBindingSource
-            // 
-            this.lvChartAppBindingSource.DataSource = typeof(scada.LvChartApp);
             // 
             // btnLoad
             // 
@@ -79,14 +69,7 @@ namespace scada
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.yearDataGridViewTextBoxColumn,
-            this.monthDataGridViewTextBoxColumn,
-            this.khoiLuongDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.lvChartAppBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 220);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(901, 178);
@@ -96,29 +79,13 @@ namespace scada
             // 
             this.lvChartAppBindingSource2.DataSource = typeof(scada.LvChartApp);
             // 
-            // idDataGridViewTextBoxColumn
+            // lvChartAppBindingSource1
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.lvChartAppBindingSource1.DataSource = typeof(scada.LvChartApp);
             // 
-            // yearDataGridViewTextBoxColumn
+            // lvChartAppBindingSource
             // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            // 
-            // monthDataGridViewTextBoxColumn
-            // 
-            this.monthDataGridViewTextBoxColumn.DataPropertyName = "Month";
-            this.monthDataGridViewTextBoxColumn.HeaderText = "Month";
-            this.monthDataGridViewTextBoxColumn.Name = "monthDataGridViewTextBoxColumn";
-            // 
-            // khoiLuongDataGridViewTextBoxColumn
-            // 
-            this.khoiLuongDataGridViewTextBoxColumn.DataPropertyName = "KhoiLuong";
-            this.khoiLuongDataGridViewTextBoxColumn.HeaderText = "KhoiLuong";
-            this.khoiLuongDataGridViewTextBoxColumn.Name = "khoiLuongDataGridViewTextBoxColumn";
+            this.lvChartAppBindingSource.DataSource = typeof(scada.LvChartApp);
             // 
             // Chart
             // 
@@ -133,10 +100,10 @@ namespace scada
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Chart_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lvChartAppBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,10 +116,6 @@ namespace scada
         private System.Windows.Forms.BindingSource lvChartAppBindingSource;
         private System.Windows.Forms.BindingSource lvChartAppBindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn khoiLuongDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource lvChartAppBindingSource2;
     }
 }
