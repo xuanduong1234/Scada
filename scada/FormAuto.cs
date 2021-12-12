@@ -54,13 +54,13 @@ namespace scada
             i = dataGridView1.CurrentRow.Index;
             txtID.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
             txtCongThuc.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            txtXiMang.Text = dataGridView1.Rows[i].Cells[2].Value.ToString()+ " Kg" ;
-            txtCat.Text = dataGridView1.Rows[i].Cells[3].Value.ToString() + " Kg";
-            txtKhoang.Text = dataGridView1.Rows[i].Cells[4].Value.ToString() + " Kg";
-            txtTroBay.Text = dataGridView1.Rows[i].Cells[5].Value.ToString() + " Kg";
-            txtPG1.Text = dataGridView1.Rows[i].Cells[6].Value.ToString() + " Kg";
-            txtPG2.Text = dataGridView1.Rows[i].Cells[7].Value.ToString() + " Kg";
-            txtPG3.Text = dataGridView1.Rows[i].Cells[8].Value.ToString() + " Kg";
+            txtXiMang.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+            txtCat.Text = dataGridView1.Rows[i].Cells[3].Value.ToString() ;
+            txtKhoang.Text = dataGridView1.Rows[i].Cells[4].Value.ToString() ;
+            txtTroBay.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            txtPG1.Text = dataGridView1.Rows[i].Cells[6].Value.ToString() ;
+            txtPG2.Text = dataGridView1.Rows[i].Cells[7].Value.ToString() ;
+            txtPG3.Text = dataGridView1.Rows[i].Cells[8].Value.ToString() ;
 
         }
 

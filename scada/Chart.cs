@@ -33,16 +33,17 @@ namespace scada
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-            dtaGVTongKhoiLuong.DataSource = table;
+            dataGridView1.DataSource = table;
 
         }
 
         private void Chart_Load(object sender, EventArgs e)
         {
-            /* connection = new SqlConnection(str);
+            
+             /*connection = new SqlConnection(str);
              connection.Open();
              LoadData();*/
-            lvChartAppBindingSource.DataSource = new List<LvChartApp>();
+            lvChartAppBindingSource2.DataSource = new List<LvChartApp>();
                             
             cartesianChart1.AxisX.Add(new LiveCharts.Wpf.Axis
             {
@@ -52,7 +53,7 @@ namespace scada
             cartesianChart1.AxisY.Add(new LiveCharts.Wpf.Axis
             {
                 Title = "TongKhoiLuong",
-                LabelFormatter = value =>value.ToString("C")
+                LabelFormatter = value =>value.ToString("0")
             });
             cartesianChart1.LegendLocation = LiveCharts.LegendLocation.Right;
 
@@ -62,7 +63,7 @@ namespace scada
         {
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
-            var years = (from o in lvChartAppBindingSource.DataSource as List<LvChartApp>
+            var years = (from o in lvChartAppBindingSource2.DataSource as List<LvChartApp>
                          select new { Year = o.Year }).Distinct();
             foreach(var year in years)
             {
@@ -70,7 +71,7 @@ namespace scada
                 for(int month = 1; month < 12; month++)
                 {
                     double value = 0;
-                    var data = from o in lvChartAppBindingSource.DataSource as List<LvChartApp>
+                    var data = from o in lvChartAppBindingSource2.DataSource as List<LvChartApp>
                                where o.Year.Equals(year.Year) && o.Month.Equals(month)
                                orderby o.Month ascending
                                select new { o.KhoiLuong, o.Month };

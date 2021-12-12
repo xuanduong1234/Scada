@@ -100,6 +100,33 @@ namespace scada
             this.Show();
         }
 
+        private void standardControl5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void standardControl13_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTrend_Click(object sender, EventArgs e)
+        {
+            Chart f = new Chart();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void standardControl40_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void lblCon_Click(object sender, EventArgs e)
         {
 
