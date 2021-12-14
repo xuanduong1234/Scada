@@ -188,7 +188,7 @@ namespace scada
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Lime;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -239,7 +239,7 @@ namespace scada
             this.panel3.Location = new System.Drawing.Point(508, 119);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 41);
-            this.panel3.TabIndex = 3;
+            this.panel3.TabIndex = 9;
             // 
             // txtPG3
             // 
@@ -268,7 +268,7 @@ namespace scada
             this.panel10.Location = new System.Drawing.Point(508, 72);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 41);
-            this.panel10.TabIndex = 2;
+            this.panel10.TabIndex = 8;
             // 
             // txtPG2
             // 
@@ -297,7 +297,7 @@ namespace scada
             this.panel9.Location = new System.Drawing.Point(508, 25);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 41);
-            this.panel9.TabIndex = 2;
+            this.panel9.TabIndex = 7;
             // 
             // txtPG1
             // 
@@ -326,7 +326,7 @@ namespace scada
             this.panel8.Location = new System.Drawing.Point(269, 119);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 41);
-            this.panel8.TabIndex = 2;
+            this.panel8.TabIndex = 6;
             // 
             // txtTroBay
             // 
@@ -355,7 +355,7 @@ namespace scada
             this.panel7.Location = new System.Drawing.Point(269, 72);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 41);
-            this.panel7.TabIndex = 2;
+            this.panel7.TabIndex = 5;
             // 
             // txtKhoang
             // 
@@ -384,7 +384,7 @@ namespace scada
             this.panel6.Location = new System.Drawing.Point(269, 25);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 41);
-            this.panel6.TabIndex = 2;
+            this.panel6.TabIndex = 4;
             // 
             // txtCat
             // 
@@ -414,7 +414,7 @@ namespace scada
             this.panel5.Location = new System.Drawing.Point(25, 119);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 41);
-            this.panel5.TabIndex = 2;
+            this.panel5.TabIndex = 3;
             // 
             // txtXiMang
             // 
@@ -453,7 +453,7 @@ namespace scada
             this.txtCongThuc.Location = new System.Drawing.Point(88, 8);
             this.txtCongThuc.Name = "txtCongThuc";
             this.txtCongThuc.Size = new System.Drawing.Size(100, 25);
-            this.txtCongThuc.TabIndex = 1;
+            this.txtCongThuc.TabIndex = 2;
             this.txtCongThuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCongThuc_KeyPress);
             // 
             // label3
@@ -474,7 +474,7 @@ namespace scada
             this.panel2.Location = new System.Drawing.Point(25, 21);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 46);
-            this.panel2.TabIndex = 0;
+            this.panel2.TabIndex = 1;
             // 
             // txtID
             // 
@@ -524,6 +524,7 @@ namespace scada
             this.Name = "FormAuto";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "1";
             this.Load += new System.EventHandler(this.FormAuto_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

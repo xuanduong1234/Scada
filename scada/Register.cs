@@ -31,40 +31,59 @@ namespace scada
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-           
+
+            //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True");
+            //try
+            //{
+            //    con.Open();
+            //    string strcheckLogin = string.Empty;
+
+            //    strcheckLogin += "SELECT * FROM LoginTbl ";
+            //    strcheckLogin += "WHERE Username ='" + txtUserName.Text + "'";
+            //    strcheckLogin += "AND Password = '" + txtPassword.Text + "'";
+
+            //    SqlCommand cmd = new SqlCommand(strcheckLogin, con);
+            //    SqlDataReader dta = cmd.ExecuteReader();
+            //    DataTable dt = new DataTable();
+
+
+
+            //    if (dta.Read() == true)
+            //    {                   
+            //        SCADA a = new SCADA();
+            //        a.ShowDialog();
+            //        this.Show();
+
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Tài khoản hoặc Mật khẩu sai. Xin thử lại.");
+            //        txtUserName.Focus();
+            //        txtUserName.SelectAll();
+            //        txtPassword.Clear();
+            //    }
+            //}
+            //catch (Exception eww)
+            //{
+            //    MessageBox.Show("Lỗi kết nối " + eww.Message);
+            //}
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True");
-            try
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM LoginTbl WHERE Username ='" + txtUserName.Text + "'AND Password = '" + txtPassword.Text + "'", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if(dt.Rows.Count > 0)
             {
-                con.Open();
-                string strcheckLogin = string.Empty;
+                SCADA a = new SCADA(dt.Rows[0][0].ToString(), dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString());
+                a.ShowDialog();
+                this.Show();
 
-                strcheckLogin += "SELECT * FROM LoginTbl ";
-                strcheckLogin += "WHERE Username ='" + txtUserName.Text + "'";
-                strcheckLogin += "AND Password = '" + txtPassword.Text + "'";
-                
-                SqlCommand cmd = new SqlCommand(strcheckLogin, con);
-                SqlDataReader dta = cmd.ExecuteReader();
-                DataTable dt = new DataTable();
-                
-
-                if (dta.Read() == true)
-                {                   
-                    SCADA a = new SCADA();
-                    a.ShowDialog();
-                    this.Show();
-
-                }
-                else
-                {
-                    MessageBox.Show("Tài khoản hoặc Mật khẩu sai. Xin thử lại.");
-                    txtUserName.Focus();
-                    txtUserName.SelectAll();
-                    txtPassword.Clear();
-                }
             }
-            catch (Exception eww)
+            else
             {
-                MessageBox.Show("Lỗi kết nối " + eww.Message);
+                MessageBox.Show("Tài khoản hoặc Mật khẩu sai. Xin thử lại.");
+                txtUserName.Focus();
+                txtUserName.SelectAll();
+                txtPassword.Clear();
             }
         }
     
@@ -95,7 +114,7 @@ namespace scada
 
         private void btnDangNhap_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+           if(e.KeyCode == Keys.Enter)
             {
                 btnDangNhap.PerformClick();
             }

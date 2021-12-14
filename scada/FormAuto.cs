@@ -13,6 +13,7 @@ namespace scada
 {
     public partial class FormAuto : Form
     {
+        
         SqlConnection connection;
         SqlCommand command;
         string str = @"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True";
@@ -66,7 +67,7 @@ namespace scada
 
         //Thêm CSDL
         private void btnThem_Click_1(object sender, EventArgs e)
-        {
+        {         
             command = connection.CreateCommand();
             command.CommandText = "INSERT INTO CongThuc VALUES( '" + txtCongThuc.Text + "', '" + txtXiMang.Text + "', '" + txtCat.Text + "', '" + txtKhoang.Text + "', '" + txtTroBay.Text + "', '" + txtPG1.Text + "', '" + txtPG2.Text + "', '" + txtPG3.Text + "' )";
             command.ExecuteNonQuery();
@@ -167,13 +168,13 @@ namespace scada
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-            SCADA f = new SCADA();
-            f.ShowDialog();
-            this.Show();
-        }
+        //private void btnClose_Click(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //    SCADA f = new SCADA();
+        //    f.ShowDialog();
+        //    this.Show();
+        //}
     }
     
 }

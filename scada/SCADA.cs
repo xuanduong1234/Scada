@@ -18,15 +18,12 @@ namespace scada
         private About about;
         private Form activeForm = null;
 
-        string Username = "", Password = "", Quyen = "Admin";
+        string Username = "", Password = "", Quyen = "";
         //Kết nối CSDL
         SqlConnection conec = new SqlConnection(@"Data Source=DESKTOP-PQ44GPT\SQLEXPRESS;Initial Catalog=SCADA;Integrated Security=True");    
-        string SQL;
-        SqlDataAdapter da;
-        DataTable dt;
-        SqlCommand cmd;
+        
 
-        public SCADA()
+        public SCADA(string id, string Username, string Password, string Quyen)
         {
             this.about = new About();
             InitializeComponent();
@@ -35,6 +32,9 @@ namespace scada
             //this.ControlBox = false;
             //this.DoubleBuffered = true;
             //this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Username = Username;
+            this.Password = Password;
+            this.Quyen = Quyen;
         }
         //Mơ childform
         private void openChildForm(Form childForm)
@@ -72,9 +72,13 @@ namespace scada
             if (Quyen == "Admin")
                 lblQuyen.Text = "ADMIN";
             else
-                lblQuyen.Text = "USER";           
+            {
+                lblQuyen.Text = "USER";
+                btnManual.Enabled = false;  // Quyền User không sd được
+            }
+                
         }
-        // Chỉ nhập số không nhập chữ
+        // Chỉ nhập số không nhập chữ( địa chỉ PLC)
         private void txtAdressPLC_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -100,16 +104,16 @@ namespace scada
 
         private void btnAuto_Click(object sender, EventArgs e)
         {
-            
         }
 
+        // Hiển thị form Auto
         private void btnRecipe_Click(object sender, EventArgs e)
         {
             FormAuto f = new FormAuto();
             f.ShowDialog();
             this.Show();
         }
-
+        // Hiển thi form Error
         private void btnOffSet_Click(object sender, EventArgs e)
         {
             Error f = new Error();
@@ -126,7 +130,7 @@ namespace scada
         {
 
         }
-
+        // Hiển thị form Chart
         private void btnTrend_Click(object sender, EventArgs e)
         {
             Chart f = new Chart();
@@ -146,7 +150,11 @@ namespace scada
 
         private void btnWeigh_Click(object sender, EventArgs e)
         {
-            this.openChildForm(about);
+            // this.openChildForm(about);
+            About f = new About();
+            f.ShowDialog();
+            this.Show();
+            
         }
 
         private void lblCon_Click(object sender, EventArgs e)
@@ -163,12 +171,7 @@ namespace scada
                 Manual f = new Manual();
                 f.ShowDialog();
                 this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Bạn không có quyền truy cập.");
-            }
-            
+            }                       
         }       
     }
 }
