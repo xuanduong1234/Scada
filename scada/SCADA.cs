@@ -16,6 +16,7 @@ namespace scada
     {
         private int boderSize = 2;
         private About about;
+        private formHMI formHMI;
         private Form activeForm = null;
 
         string Username = "", Password = "", Quyen = "";
@@ -25,6 +26,7 @@ namespace scada
 
         public SCADA(string id, string Username, string Password, string Quyen)
         {
+            this.formHMI = new formHMI();
             this.about = new About();
             InitializeComponent();
             this.Text = string.Empty;
@@ -35,6 +37,7 @@ namespace scada
             this.Username = Username;
             this.Password = Password;
             this.Quyen = Quyen;
+            this.openChildForm(formHMI);
         }
         //Mơ childform
         private void openChildForm(Form childForm)
